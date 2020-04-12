@@ -1,0 +1,69 @@
+.container{
+    margin: 0px auto;
+    padding: 0px;
+    border:none;
+}
+.head{
+    height:40px;
+    background-color: dodgerblue;
+    background-size: 100% 100%;
+    padding:5px;
+
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    /*box-shadow: 7px 15px 30px #285a63;*/
+
+    border-radius: 5px;
+
+    -webkit-filter:brightness(1);
+    -o-filter:brightness(0.9);
+    -moz-filter:brightness(0.9);
+    filter:brightness(0.9);
+}
+.head::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+
+.head-right{
+    display:inline-block;
+    vertical-align: middle;
+    float:right;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    position:absolute;
+    right:10px;
+    text-align: center;
+    background-color: transparent;
+}
+.head-right span{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+}
+.head-middle{
+    display:inline-block;
+    vertical-align: middle;
+    float:right;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    position:absolute;
+    right:100px;
+    text-align: center;
+    background-color: transparent;
+}
+.head-middle span{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    display: inline-block;
+}
+.middle{
+    height: 600px;
+    background: url("img/bg.png")no-repeat;
+    background-size:100% 100%;
+}
