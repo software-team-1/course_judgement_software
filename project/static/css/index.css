@@ -2,9 +2,11 @@
     margin: 0px auto;
     padding: 0px;
     border:none;
+    height:auto;
+    width:auto;
 }
 .head{
-    height:40px;
+    height:8vh;
     background-color: dodgerblue;
     background-size: 100% 100%;
     padding:5px;
@@ -20,50 +22,49 @@
     -moz-filter:brightness(0.9);
     filter:brightness(0.9);
 }
-.head::after{
-    content:"";
-    clear:both;
-    display: block;
-}
 
 .head-right{
     display:inline-block;
     vertical-align: middle;
     float:right;
     width: 80px;
-    height: 30px;
-    margin: 5px;
-    position:absolute;
-    right:10px;
-    text-align: center;
+    height:8vh;
+    margin: 0px;
+    position:relative;
+    right:2vw;
     background-color: transparent;
 }
 .head-right span{
+    display: inline-block;
     text-align: center;
     color: white;
     vertical-align: middle;
-    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 .head-middle{
     display:inline-block;
     vertical-align: middle;
     float:right;
     width: 80px;
-    height: 30px;
-    margin: 5px;
-    position:absolute;
-    right:100px;
-    text-align: center;
+    height:8vh;
+    margin: 0px;
+    position:relative;
+    right:3vw;
     background-color: transparent;
 }
 .head-middle span{
+    display: inline-block;
     text-align: center;
     color: white;
     vertical-align: middle;
-    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
 }
 .middle{
-    height: 600px;
+    height: 100vh;
     background: url("../img/bg.png")no-repeat;
     background-size:100% 100%;
 }
