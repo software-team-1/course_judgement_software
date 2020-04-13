@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <a href="{% url 'log_sign:home'%}">回到主页</a>
+    <form action="" method="POST">
+    {% csrf_token %}
+    {{ error }}
+    <input type="text" name="username" placeholder="用户名">
+    <input type="password" name="password" placeholder="密码">
+    <button type="submit">登录</button>
+    </form>
+</body>
+</html>

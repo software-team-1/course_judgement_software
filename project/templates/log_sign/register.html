@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+    <h1>注册</h1>
+    <a href="{% url 'log_sign:home'%}">回到主页</a>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ register_forms.as_p }}
+        <button type="submit">注册</button>
+    </form>
+</body>
+</html>

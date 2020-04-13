@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <h1>主页</h1>
+    {% if user.is_authenticated %}
+        <a href="{% url 'log_sign:logout'%}">退出</a>
+    {% else %}
+        <a href="{% url 'log_sign:login'%}">登录</a>
+        <a href="{% url 'log_sign:register'%}">注册</a>
+    {% endif %}
+
+</body>
+</html>
