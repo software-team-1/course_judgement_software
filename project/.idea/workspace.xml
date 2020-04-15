@@ -2,59 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c266676-b399-4b9e-97fe-fe22a492f884" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_sign/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/bg-bright.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/bg-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/log_sign/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_sign/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_sign/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log_sign/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log_sign/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/log_in.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log_sign/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -63,6 +54,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -80,12 +73,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -115,7 +110,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
       </envs>
-      <option name="SDK_HOME" value="D:\Anaconda3\conda\envs\django\python.exe" />
+      <option name="SDK_HOME" value="C:\Program Files\Python37\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -150,43 +145,56 @@
       <workItem from="1586766414125" duration="48000" />
       <workItem from="1586766471981" duration="455000" />
       <workItem from="1586766963004" duration="148000" />
+      <workItem from="1586873238918" duration="601000" />
+      <workItem from="1586874459692" duration="20000" />
+      <workItem from="1586876067316" duration="4066000" />
+      <workItem from="1586919729190" duration="12404000" />
+      <workItem from="1586937989809" duration="4012000" />
+      <workItem from="1586942020773" duration="1867000" />
+      <workItem from="1586946365899" duration="627000" />
+      <workItem from="1586947009680" duration="219000" />
+      <workItem from="1586947246611" duration="2767000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586766400535">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586876271868">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766400535" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586876271868" />
+    <state x="340" y="0" key="#project" timestamp="1586876310614">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="340" y="0" key="#project/0.0.1280.680@0.0.1280.680" timestamp="1586876310614" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1586696006473">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
-    <state width="764" height="117" key="GridCell.Tab.0.bottom" timestamp="1586767111455">
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom" timestamp="1586951526743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="764" height="117" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586767111455" />
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
     <state width="1397" height="219" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="764" height="117" key="GridCell.Tab.0.center" timestamp="1586767111455">
+    <state width="1237" height="63" key="GridCell.Tab.0.center" timestamp="1586951526743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="764" height="117" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586767111455" />
+    <state width="1237" height="63" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
     <state width="1397" height="219" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="764" height="117" key="GridCell.Tab.0.left" timestamp="1586767111455">
+    <state width="1237" height="63" key="GridCell.Tab.0.left" timestamp="1586951526743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="764" height="117" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586767111455" />
+    <state width="1237" height="63" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
     <state width="1397" height="219" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="764" height="117" key="GridCell.Tab.0.right" timestamp="1586767111455">
+    <state width="1237" height="63" key="GridCell.Tab.0.right" timestamp="1586951526743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="764" height="117" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586767111455" />
+    <state width="1237" height="63" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
     <state width="1397" height="219" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
     <state width="1222" height="200" key="GridCell.Tab.1.bottom" timestamp="1586699043082">
       <screen x="0" y="0" width="1280" height="680" />
@@ -204,6 +212,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1222" height="200" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1586699043082" />
+    <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1586921685662">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1586921685662" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1586766448519">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -212,5 +224,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766963476" />
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1586951203230">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586951203230" />
   </component>
 </project>
