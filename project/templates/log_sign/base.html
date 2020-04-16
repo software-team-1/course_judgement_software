@@ -1,23 +1,4 @@
 {% load static %}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>home</title>#}
-{#</head>#}
-{#<body>#}
-{#    <h1>主页</h1>#}
-{#    {% if user.is_authenticated %}#}
-{#        <a href="{% url 'log_sign:logout'%}">退出</a>#}
-{#    {% else %}#}
-{#        <a href="{% url 'log_sign:login'%}">登录</a>#}
-{#        <a href="{% url 'log_sign:register'%}">注册</a>#}
-{#    {% endif %}#}
-{##}
-{#</body>#}
-{#</html>#}
-
-{#{% load staticfiles %}#}
 <!DOCTYPE html>
 <html lang="zh-Hans">
   <head>
@@ -35,7 +16,6 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
@@ -57,9 +37,6 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="my-nav">
-{#          <ul class="nav navbar-nav">#}
-{#            <li><a href="{% url 'log_sign:home'%}">主页</a></li>#}
-{#          </ul>#}
           <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'log_sign:logout'%}" style="color:white">退出</a></li>
@@ -73,7 +50,6 @@
     </nav>
 
     {% block content %}{% endblock %}
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 {#    <script src="{% static 'bootstrap/js/jquery-3.2.1.js' %}"></script>#}
     <!-- Include all compiled plugins (below), or include individual files as needed -->

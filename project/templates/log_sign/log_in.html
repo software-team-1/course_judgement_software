@@ -1,46 +1,33 @@
 {% extends 'log_sign/base.html' %}
 {% load static %}
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>login</title>#}
-{#</head>#}
-{#<body>#}
-{#{% block content %}#}
-{#    <a href="{% url 'log_sign:home'%}">回到主页</a>#}
-{#    <form action="" method="POST">#}
-{#    {% csrf_token %}#}
-{#    {{ error }}#}
-{#    <input type="text" name="username" placeholder="用户名">#}
-{#    <input type="password" name="password" placeholder="密码">#}
-{#    <button type="submit">登录</button>#}
-{#    </form>#}
-{#{% endblock %}#}
-{#</body>#}
-{#</html>#}
 
 {% block title %}登录{% endblock %}
-{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+{% block css %}<link href="{% static 'css/register.css' %}" rel="stylesheet"/>{% endblock %}
 
 {% block content %}
+    {% csrf_token %}
+
     <div class="container">
-        <div class="col-md-4 col-md-offset-4">
-          <form class='form-login' action="" method="post">
-              <h3 class="text-center" style="font-size: 20px">登录</h3>
-              {% csrf_token %}
-              <div class="form-group">
-                <label for="id_username">用户名：</label>
-                <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
-              </div>
-              <div class="form-group">
-                <label for="id_password">密码：</label>
-                <input type="password" name='password' class="form-control" id="id_password" placeholder="Password" required>
-              </div>
-              <button type="reset" class="btn btn-default pull-left">重置</button>
-              <button type="submit" class="btn btn-primary pull-right">提交</button>
-          </form>
+        <div class="col-md-4 col-md-offset-7" id="login-box">
+            <form class='form-login' action="" method="post">
+                {% csrf_token %}
+                <h4 class="text-center" style="font-size: 20px">登录</h4>
+                <div class="form-group">
+                  <label for="username" class="col-sm-3 control-label">用户名:</label>
+                  <div class="col-sm-9">
+                      <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="id_password1" class="col-sm-3 control-label">密码:</label>
+                  <div class="col-sm-9">
+                      <input type="password" name='password' class="form-control" id="id_password" placeholder="Password" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">登录</button>
+            </form>
         </div>
+
     </div> <!-- /container -->
 {% endblock %}
 

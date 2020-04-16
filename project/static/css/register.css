@@ -1,7 +1,5 @@
 .container {
   background: url("../img/bg-amb.png")no-repeat;
-  /*background-attachment:fixed;*/
-
   margin: auto;
   padding: 0;
   border:none;
@@ -9,29 +7,30 @@
   width:100vw;
   background-size:100% 100%;
 }
-.label_input {
-    font-size: 16px;
-    font-family: 宋体;
 
-    margin-bottom: 10px;
+/*.label_input {*/
+/*    font-size: 16px;*/
+/*    font-family: 宋体;*/
 
-    width: 75px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
+/*    margin-bottom: 10px;*/
 
-    color: white;
-    background-color: rgba(30, 144, 255, 0.7);
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
-.text_field {
-    width: 200px;
-    height: 35px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border: 0;
-}
+/*    width: 75px;*/
+/*    height: 35px;*/
+/*    line-height: 35px;*/
+/*    text-align: center;*/
+
+/*    color: white;*/
+/*    background-color: rgba(30, 144, 255, 0.7);*/
+/*    border-top-left-radius: 3px;*/
+/*    border-bottom-left-radius: 3px;*/
+/*}*/
+/*.text_field {*/
+/*    width: 200px;*/
+/*    height: 35px;*/
+/*    border-top-right-radius: 3px;*/
+/*    border-bottom-right-radius: 3px;*/
+/*    border: 0;*/
+/*}*/
 
 .btn.btn-primary{
     /*font-size: 16px;*/
@@ -49,12 +48,27 @@
     /*border-radius: 3px;*/
     /*border: 0;*/
 }
-#col{
 
+.text-center{
+    margin-bottom: 20px;
 }
+
+.col-sm-3.control-label{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-group{
+    display:inline-block;
+    width:100%;
+    height:40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .form-login {
+    display: inline-block;
   background-color: rgba(245, 245, 245, 0.4);
-  background-size:80% 120%;
+  background-size:100% 100%;
   /*border:none;*/
 
   -moz-box-shadow:2px 2px 5px #333333;
@@ -64,16 +78,25 @@
     width:100%;
   padding: 20px;
   /*padding-bottom: 50px;*/
-  margin-top:120px;
-  /*margin-left: 90%;*/
 
   border-radius: 4px;
+}
+#register-box{
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#login-box{
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .form-login .form-control {
   position: relative;
   height: auto;
   width: 100%;
+    border-radius: 4px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -86,11 +109,11 @@
 }
 .form-login input[type="text"] {
   margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  /*border-bottom-right-radius: 0;*/
+  /*border-bottom-left-radius: 0;*/
 }
 .form-login input[type="password"] {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  /*border-top-left-radius: 0;*/
+  /*border-top-right-radius: 0;*/
 }

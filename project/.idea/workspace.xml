@@ -2,42 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c266676-b399-4b9e-97fe-fe22a492f884" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bootstrap/js/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg-bright.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/bg-text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/log_sign/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/bg-amb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_sign/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_sign/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log_sign/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/log_sign/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/log_sign/log_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/log_in.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/log_sign/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/register.html" afterDir="false" />
@@ -153,7 +124,14 @@
       <workItem from="1586942020773" duration="1867000" />
       <workItem from="1586946365899" duration="627000" />
       <workItem from="1586947009680" duration="219000" />
-      <workItem from="1586947246611" duration="2767000" />
+      <workItem from="1586947246611" duration="3367000" />
+      <workItem from="1586957419926" duration="270000" />
+      <workItem from="1586957703103" duration="167000" />
+      <workItem from="1586957884940" duration="9459000" />
+      <workItem from="1587003980114" duration="309000" />
+      <workItem from="1587004298784" duration="6132000" />
+      <workItem from="1587045543530" duration="2824000" />
+      <workItem from="1587048412215" duration="64000" />
     </task>
     <servers />
   </component>
@@ -168,6 +146,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586876271868" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587046580569">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587046580569" />
     <state x="340" y="0" key="#project" timestamp="1586876310614">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -176,25 +158,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
-    <state width="1237" height="63" key="GridCell.Tab.0.bottom" timestamp="1586951526743">
+    <state width="1237" height="139" key="GridCell.Tab.0.bottom" timestamp="1587048475877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="63" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
+    <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587048475877" />
     <state width="1397" height="219" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="1237" height="63" key="GridCell.Tab.0.center" timestamp="1586951526743">
+    <state width="1237" height="139" key="GridCell.Tab.0.center" timestamp="1587048475876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="63" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
+    <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="219" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="1237" height="63" key="GridCell.Tab.0.left" timestamp="1586951526743">
+    <state width="1237" height="139" key="GridCell.Tab.0.left" timestamp="1587048475876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="63" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
+    <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="219" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
-    <state width="1237" height="63" key="GridCell.Tab.0.right" timestamp="1586951526743">
+    <state width="1237" height="139" key="GridCell.Tab.0.right" timestamp="1587048475876">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="63" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586951526743" />
+    <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="219" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1586693006247" />
     <state width="1222" height="200" key="GridCell.Tab.1.bottom" timestamp="1586699043082">
       <screen x="0" y="0" width="1280" height="680" />
@@ -224,9 +206,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766963476" />
-    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1586951203230">
+    <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586951203230" />
+    <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1586951671059" />
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup" timestamp="1587046992201">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="-6" width="672" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587046992201" />
   </component>
 </project>
