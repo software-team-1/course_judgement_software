@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c266676-b399-4b9e-97fe-fe22a492f884" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log_sign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_sign/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_search_judgement/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +45,7 @@
         <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="log_sign_normal_user: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="course_search_judgement_course: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -127,16 +114,16 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python37\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -180,6 +167,8 @@
       <workItem from="1587048412215" duration="64000" />
       <workItem from="1587342173880" duration="46000" />
       <workItem from="1587342220882" duration="7534000" />
+      <workItem from="1587359156124" duration="13000" />
+      <workItem from="1587359171572" duration="984000" />
     </task>
     <servers />
   </component>
@@ -199,36 +188,36 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587046580569" />
-    <state x="383" y="0" key="#project" timestamp="1587349941180">
+    <state x="383" y="0" key="#project" timestamp="1587359961154">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="340" y="0" key="#project/0.0.1280.680@0.0.1280.680" timestamp="1586876310614" />
-    <state x="383" y="0" key="#project/0.0.1440.860@0.0.1440.860" timestamp="1587349941180" />
-    <state x="474" y="120" key="FileChooserDialogImpl" timestamp="1587342729638">
+    <state x="383" y="0" key="#project/0.0.1440.860@0.0.1440.860" timestamp="1587359961154" />
+    <state x="474" y="120" key="FileChooserDialogImpl" timestamp="1587359167239">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
-    <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587342729638" />
-    <state width="1397" height="217" key="GridCell.Tab.0.bottom" timestamp="1587353393707">
+    <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587359167239" />
+    <state width="1397" height="217" key="GridCell.Tab.0.bottom" timestamp="1587360155809">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587048475877" />
-    <state width="1397" height="217" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587353393707" />
-    <state width="1397" height="217" key="GridCell.Tab.0.center" timestamp="1587353393707">
+    <state width="1397" height="217" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="217" key="GridCell.Tab.0.center" timestamp="1587360155809">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587353393707" />
-    <state width="1397" height="217" key="GridCell.Tab.0.left" timestamp="1587353393707">
+    <state width="1397" height="217" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="217" key="GridCell.Tab.0.left" timestamp="1587360155809">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587353393707" />
-    <state width="1397" height="217" key="GridCell.Tab.0.right" timestamp="1587353393707">
+    <state width="1397" height="217" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="217" key="GridCell.Tab.0.right" timestamp="1587360155809">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587353393707" />
+    <state width="1397" height="217" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
     <state width="1222" height="200" key="GridCell.Tab.1.bottom" timestamp="1586699043082">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -258,11 +247,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1587342173895">
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1587359156813">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766963476" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1587342173895" />
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1587359156813" />
     <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
