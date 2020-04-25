@@ -1,0 +1,13 @@
+<p>你查询的课程名: <strong>{{ query }}</strong></p>
+
+{% if courses %}
+    <p> 找到 {{ courses|length }} 个课程 </p>
+    <ul>
+        {% for course in courses %}
+            <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> 没有找到对应的课程 </p>
+{% endif %}
+

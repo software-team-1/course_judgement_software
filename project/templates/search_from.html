@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+    {% if error %}
+        <p style="...">请输入关键字进行搜索</p>
+    {% endif %}
+    <from action="/course_search_judgement/search_result" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="搜索课程">
+    </from>
+</body>
+</html>

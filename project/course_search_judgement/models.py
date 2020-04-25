@@ -10,6 +10,9 @@ class course(models.Model):
     # 授课教师
     teacher = models.CharField(max_length=10, null=False)
 
+    def __unicode__(self):
+        return self.name
+
 
 class judgement_system(models.Model):
     name = models.ForeignKey(normal_user, on_delete=models.CASCADE)
