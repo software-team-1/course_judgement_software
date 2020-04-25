@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c266676-b399-4b9e-97fe-fe22a492f884" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0002_auto_20200423_1144.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search_from.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search_result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PycharmProjects/bysms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -188,6 +168,7 @@
       <workItem from="1587555491024" duration="11401000" />
       <workItem from="1587606096881" duration="8948000" />
       <workItem from="1587812112079" duration="1257000" />
+      <workItem from="1587817270652" duration="25000" />
     </task>
     <servers />
   </component>
@@ -219,30 +200,30 @@
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
     <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587359167239" />
     <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1587629056061" />
-    <state width="1568" height="269" key="GridCell.Tab.0.bottom" timestamp="1587816055363">
+    <state width="1568" height="269" key="GridCell.Tab.0.bottom" timestamp="1587817294904">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587048475877" />
     <state width="1397" height="217" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
-    <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1587816055363" />
-    <state width="1568" height="269" key="GridCell.Tab.0.center" timestamp="1587816055363">
+    <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1587817294904" />
+    <state width="1568" height="269" key="GridCell.Tab.0.center" timestamp="1587817294904">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="217" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
-    <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1587816055363" />
-    <state width="1568" height="269" key="GridCell.Tab.0.left" timestamp="1587816055363">
+    <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1587817294904" />
+    <state width="1568" height="269" key="GridCell.Tab.0.left" timestamp="1587817294904">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="217" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
-    <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1587816055363" />
-    <state width="1568" height="269" key="GridCell.Tab.0.right" timestamp="1587816055363">
+    <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1587817294904" />
+    <state width="1568" height="269" key="GridCell.Tab.0.right" timestamp="1587817294904">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
     <state width="1397" height="217" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
-    <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1587816055363" />
+    <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1587817294904" />
     <state width="1568" height="334" key="GridCell.Tab.1.bottom" timestamp="1587631681652">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
