@@ -9,7 +9,7 @@ class course(models.Model):
     name = models.CharField(max_length=20, null=False)
     # 授课教师
     teacher = models.CharField(max_length=10, null=False)
-
+    credit =models.DecimalField(max_digits=10,decimal_places=1,default=2)
     def __unicode__(self):
         return self.name
 

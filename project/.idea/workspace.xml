@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c266676-b399-4b9e-97fe-fe22a492f884" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0003_auto_20200427_0844.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,22 +29,36 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="auth_user_groups: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="auth_user_user_permissions: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
         <item name="course_search_judgement_course: table" type="3d80ac25:SqliteImplModel$Table" />
@@ -177,6 +197,7 @@
       <workItem from="1587910368363" duration="57000" />
       <workItem from="1587910472804" duration="336000" />
       <workItem from="1587911456001" duration="189000" />
+      <workItem from="1587947282213" duration="1079000" />
     </task>
     <servers />
   </component>
@@ -187,11 +208,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587556309091">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587947618171">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1586876271868" />
-    <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1587342733799" />
+    <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1587947618171" />
     <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1587556309091" />
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587046580569">
       <screen x="0" y="0" width="1280" height="680" />
@@ -202,35 +223,35 @@
     </state>
     <state x="340" y="0" key="#project/0.0.1280.680@0.0.1280.680" timestamp="1586876310614" />
     <state x="383" y="0" key="#project/0.0.1440.860@0.0.1440.860" timestamp="1587359961154" />
-    <state x="533" y="145" key="FileChooserDialogImpl" timestamp="1587906900922">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state x="474" y="120" key="FileChooserDialogImpl" timestamp="1587947613533">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
-    <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587359167239" />
+    <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587947613533" />
     <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1587906900922" />
-    <state width="1568" height="269" key="GridCell.Tab.0.bottom" timestamp="1587910808318">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state width="1397" height="218" key="GridCell.Tab.0.bottom" timestamp="1587948369024">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587048475877" />
-    <state width="1397" height="217" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="218" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587948369024" />
     <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1587910808318" />
-    <state width="1568" height="269" key="GridCell.Tab.0.center" timestamp="1587910808318">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state width="1397" height="218" key="GridCell.Tab.0.center" timestamp="1587948369020">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="218" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587948369020" />
     <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1587910808318" />
-    <state width="1568" height="269" key="GridCell.Tab.0.left" timestamp="1587910808318">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state width="1397" height="218" key="GridCell.Tab.0.left" timestamp="1587948369020">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="218" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587948369020" />
     <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1587910808318" />
-    <state width="1568" height="269" key="GridCell.Tab.0.right" timestamp="1587910808318">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state width="1397" height="218" key="GridCell.Tab.0.right" timestamp="1587948369024">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587048475876" />
-    <state width="1397" height="217" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587360155809" />
+    <state width="1397" height="218" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587948369024" />
     <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1587910808318" />
     <state width="1568" height="334" key="GridCell.Tab.1.bottom" timestamp="1587631681652">
       <screen x="0" y="0" width="1620" height="1040" />
@@ -256,21 +277,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1586921685662" />
-    <state x="49" y="49" key="SettingsEditor" timestamp="1587556925444">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state x="160" y="0" key="SettingsEditor" timestamp="1587947390507">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586766448519" />
-    <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1587342246432" />
+    <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1587947390507" />
     <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1587556925444" />
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog" timestamp="1587344618265">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
-    <state x="412" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1587911459304">
-      <screen x="0" y="0" width="1620" height="1040" />
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1587947282412">
+      <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766963476" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1587359156813" />
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1587947282412" />
     <state x="412" y="253" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1587911459304" />
     <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
       <screen x="0" y="0" width="1280" height="680" />
