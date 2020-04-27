@@ -4,7 +4,7 @@
     <p> 找到 {{ courses|length }} 个课程 </p>
     <ul>
         {% for course in courses %}
-            <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}</li>
+            <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}-{{ course.credit }}</li>
         {% endfor %}
     </ul>
 {% else %}

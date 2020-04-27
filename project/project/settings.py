@@ -118,4 +118,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-TEMPLATES_DIRS = ('C:/Codes/software group1/course_judgement_software/project/templates',)
+#TEMPLATES_DIRS = ('C:/Codes/software group1/course_judgement_software/project/templates',)
