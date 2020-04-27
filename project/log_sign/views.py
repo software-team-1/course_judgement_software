@@ -12,6 +12,7 @@ def home(request):
 
 
 def log_in(request):
+    request.session.set_expiry(0)
     if request.method == 'POST':
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
