@@ -8,9 +8,9 @@
     {% if error %}
         <p style="...">请输入关键字进行搜索</p>
     {% endif %}
-    <from action="/course_search_judgement/search_result" method="get">
+    <form action="/search_result/" method="POST">
         <input type="text" name="q">
         <input type="submit" value="搜索课程">
-    </from>
+    </form>
 </body>
 </html>
