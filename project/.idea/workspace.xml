@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_search_judgement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search_from.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search_from.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +75,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python37\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -151,22 +146,26 @@
       <workItem from="1587953767138" duration="129000" />
       <workItem from="1587953908440" duration="18000" />
       <workItem from="1588081814589" duration="3188000" />
+      <workItem from="1588164884166" duration="2234000" />
+      <workItem from="1588167281818" duration="22000" />
+      <workItem from="1588167342350" duration="12000" />
+      <workItem from="1588167364425" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588082007982">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588165130449">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1588082007982" />
     <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1587947618171" />
-    <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1587556309091" />
+    <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588165130449" />
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587046580569">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -180,36 +179,36 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587957137507" />
-    <state x="474" y="120" key="FileChooserDialogImpl" timestamp="1587947613533">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="533" y="145" key="FileChooserDialogImpl" timestamp="1588167376771">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586696006473" />
     <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1587947613533" />
-    <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1587906900922" />
-    <state width="1222" height="88" key="GridCell.Tab.0.bottom" timestamp="1588085004967">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1588167376771" />
+    <state width="1568" height="269" key="GridCell.Tab.0.bottom" timestamp="1588167391046">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1222" height="88" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588085004967" />
     <state width="1397" height="218" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1587948369024" />
-    <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1587953895810" />
-    <state width="1222" height="88" key="GridCell.Tab.0.center" timestamp="1588085004967">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1588167391046" />
+    <state width="1568" height="269" key="GridCell.Tab.0.center" timestamp="1588167391046">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1222" height="88" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588085004967" />
     <state width="1397" height="218" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1587948369020" />
-    <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1587953895810" />
-    <state width="1222" height="88" key="GridCell.Tab.0.left" timestamp="1588085004967">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1588167391046" />
+    <state width="1568" height="269" key="GridCell.Tab.0.left" timestamp="1588167391046">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1222" height="88" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588085004967" />
     <state width="1397" height="218" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1587948369020" />
-    <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1587953895810" />
-    <state width="1222" height="88" key="GridCell.Tab.0.right" timestamp="1588085004967">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1588167391046" />
+    <state width="1568" height="269" key="GridCell.Tab.0.right" timestamp="1588167391046">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state width="1222" height="88" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588085004967" />
     <state width="1397" height="218" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1587948369024" />
-    <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1587953895810" />
+    <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1588167391046" />
     <state width="1568" height="334" key="GridCell.Tab.1.bottom" timestamp="1587631681652">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
@@ -234,22 +233,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1586921685662" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1587957047948">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="49" y="49" key="SettingsEditor" timestamp="1588165085352">
+      <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587957047948" />
     <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1587947390507" />
-    <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1587953782110" />
+    <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1588165085352" />
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog" timestamp="1587344618265">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
-    <state x="412" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1587953910083">
+    <state x="412" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1588167364439">
       <screen x="0" y="0" width="1620" height="1040" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586766963476" />
     <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1587947282412" />
-    <state x="412" y="253" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1587953910083" />
+    <state x="412" y="253" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588167364439" />
     <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

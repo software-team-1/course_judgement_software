@@ -21,6 +21,8 @@ def search_result(request):
 
     if request.POST:
         q = request.POST['q']
+        if not q:
+            return render(request, 'search_from.html', {'error': True})
         courses = course.objects.filter(name__contains=q)
         return render(request, 'search_result.html', {'courses': courses, 'query': q})
 
