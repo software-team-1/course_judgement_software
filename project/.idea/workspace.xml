@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0004_auto_20200430_2207.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0005_auto_20200430_2209.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +40,20 @@
         <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="course_search_judgement_course: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="course_search_judgement_judgement_system: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -202,6 +210,7 @@
       <workItem from="1588206556920" duration="854000" />
       <workItem from="1588217900579" duration="8066000" />
       <workItem from="1588251238178" duration="1632000" />
+      <workItem from="1588256122786" duration="372000" />
     </task>
     <servers />
   </component>
@@ -308,11 +317,11 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588251238773">
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588256123466">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588217900310" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1588251238773" />
+    <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1588256123466" />
     <state x="412" y="253" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588167364439" />
     <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
       <screen x="0" y="0" width="1280" height="680" />
