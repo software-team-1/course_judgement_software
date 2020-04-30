@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>judgement</title>
+</head>
+<body>
 <p>你查询的课程名: <strong>{{ query }}</strong></p>
 
 {% if courses %}
@@ -5,9 +12,13 @@
     <ul>
         {% for course in courses %}
             <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}-{{ course.credit }}</li>
+            {% for judge in judgement.1 %}
+                <li>{{ judge.name_id }}-{{ judge.teacher }}-{{ judge.evaluation }}</li>
+            {% endfor %}
         {% endfor %}
     </ul>
 {% else %}
     <p> 没有找到对应的课程 </p>
 {% endif %}
-
+</body>
+</html>

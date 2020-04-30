@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>judgement</title>
+</head>
+<body>
+{% for judge in judgement %}
+            <li>{{ judge.name_id }}-{{ judge.teacher }}-{{ judge.evaluation }}</li>
+        {% endfor %}
+</body>
+</html>
