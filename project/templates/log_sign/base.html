@@ -40,6 +40,7 @@
           <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
                     <li><a href="{% url 'log_sign:logout'%}" style="color:white">退出</a></li>
+                    <li><a href="{% url 'course_search_judgement:search_from'%}" style="color:white">搜索</a></li>
                 {% else %}
                     <li><a href="{% url 'log_sign:login'%}" style="color:white">登录</a></li>
                     <li><a href="{% url 'log_sign:register'%}" style="color:white">注册</a></li>
