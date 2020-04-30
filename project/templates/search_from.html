@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Search</title>
-</head>
-<body>
-    {% if error %}
-        <p style="...">请输入关键字进行搜索</p>
-    {% endif %}
-    <form action="/search_result/" method="POST">
-        <input type="text" name="q">
-        <input type="submit" value="搜索课程">
+{% extends 'log_sign/base.html' %}
+{% load static %}
+
+{% block title %}搜索{% endblock %}
+{% block css %}<link href="{% static 'css/search_from.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+<div class="container">
+   <div class="img">
+   </div>
+    <div class="search">
+     {% csrf_token%}
+    <form action="/search_result/" method="post">
+<img src={% static "/img/xiaohui.png"  %} alt="">
+        <input type="text" name="q" placeholder="请输入搜索条件">
+        <button type="submit" value="搜索">搜索</button>
     </form>
-</body>
-</html>
+    </div>
+</div>
+{% endblock %}

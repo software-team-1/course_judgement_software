@@ -8,18 +8,22 @@ from .models import normal_user
 
 
 def home(request):
-    return render(request, 'log_sign/home.html')
+        if request.user.is_authenticated:
+         return render(request, 'search_from.html')
+        else:
+            return render(request, 'log_sign/home.html')
+
+
 
 
 def log_in(request):
-    request.session.set_expiry(0)
     if request.method == 'POST':
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
             return render(request, 'log_sign/log_in.html', {'error': '用户名或密码不存在'})
         else:
             login(request, user)
-            return redirect('log_sign:home')
+            return render(request,'search_from.html')
     else:
         return render(request, 'log_sign/log_in.html')
 
