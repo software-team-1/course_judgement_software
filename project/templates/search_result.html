@@ -13,7 +13,7 @@
         {% for course in courses %}
             <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}-{{ course.credit }}</li>
             {% for judge in judgement.1 %}
-                <li>{{ judge.name_id }}-{{ judge.teacher }}-{{ judge.evaluation }}</li>
+                <li>{{ judge.teacher }}-{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
             {% endfor %}
         {% endfor %}
     </ul>

@@ -6,7 +6,7 @@
 </head>
 <body>
 {% for judge in judgement %}
-            <li>{{ judge.name_id }}-{{ judge.teacher }}-{{ judge.evaluation }}</li>
-        {% endfor %}
+    <li>{{ judge.teacher }}-{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
+{% endfor %}
 </body>
 </html>

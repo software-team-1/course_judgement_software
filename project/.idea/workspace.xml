@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="" />
+    <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/judgement.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/judgement.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search_result.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,41 +28,26 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="course_search_judgement_course: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="course_search_judgement_judgement_system: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [3]" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -125,7 +117,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\web\python.exe" />
+      <option name="SDK_HOME" value="D:\Anaconda3\conda\envs\django\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -208,6 +200,7 @@
       <workItem from="1588217900579" duration="8066000" />
       <workItem from="1588251238178" duration="1632000" />
       <workItem from="1588256122786" duration="498000" />
+      <workItem from="1588315628366" duration="429000" />
     </task>
     <servers />
   </component>
@@ -218,10 +211,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588255048141">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588315723910">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1588082007982" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1588315723910" />
     <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1588255048141" />
     <state x="126" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588204870459" />
     <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588165130449" />
@@ -234,10 +227,10 @@
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587046580569" />
     <state x="445" y="105" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588177516930" />
-    <state x="276" y="5" width="594" height="680" key="#project" timestamp="1588251355451">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="340" y="0" width="594" height="680" key="#project" timestamp="1588315894015">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="340" y="0" width="594" height="680" key="#project/0.0.1280.680@0.0.1280.680" timestamp="1588217914648" />
+    <state x="340" y="0" width="594" height="680" key="#project/0.0.1280.680@0.0.1280.680" timestamp="1588315894015" />
     <state x="276" y="5" key="#project/0.0.1440.860@0.0.1440.860" timestamp="1588251355451" />
     <state x="409" y="0" key="#project/0.0.1536.824@0.0.1536.824" timestamp="1588176446283" />
     <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1587957137507">
@@ -303,10 +296,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1586921685662" />
-    <state x="160" y="0" key="SettingsEditor" timestamp="1588251259603">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1588315714761">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588221488613" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588315714761" />
     <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1588251259603" />
     <state x="46" y="39" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588176468454" />
     <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1588165085352" />
@@ -314,10 +307,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
-    <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588256123466">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="325" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1588315628713">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588217900310" />
+    <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588315628713" />
     <state x="366" y="209" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1588256123466" />
     <state x="412" y="253" key="com.intellij.ide.util.TipDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1588167364439" />
     <state x="439" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586951671059">
