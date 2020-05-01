@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my_account</title>
+</head>
+<body>
+{% for judge in my_account %}
+    <li>{{ judge.course_name }}-{{ judge.course_teacher }}-{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
+{% endfor %}
+
+
+</body>
+</html>
