@@ -12,8 +12,12 @@
     <ul>
         {% for course in courses %}
             <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}-{{ course.credit }}</li>
-            {% for judge in judgement.1 %}
-                <li>{{ judge.teacher }}-{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
+            {% for key, judges in judgement.items %}
+                {% if key == course.id %}
+                    {% for judge in judges %}
+                        <li>{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
+                    {% endfor %}
+                {% endif %}
             {% endfor %}
         {% endfor %}
     </ul>
