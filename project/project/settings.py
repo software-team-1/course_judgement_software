@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'log_sign.apps.LogSignConfig',
-    'course_search_judgement.apps.CourseSearchJudgementConfig'
+    'course_search_judgement.apps.CourseSearchJudgementConfig',
+    'my_account.apps.MyAccountConfig'
 ]
 
 MIDDLEWARE = [
