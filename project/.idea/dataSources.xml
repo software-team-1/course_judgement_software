@@ -55,5 +55,11 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="db.sqlite3 4" uuid="af726bb4-97d5-401c-b985-bc3f46d60430">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\apple\Desktop\作业myc\course_judgement_software\project\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>

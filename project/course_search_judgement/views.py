@@ -37,3 +37,20 @@ def search_result(request):
 def judgement(request, p1):
     judges = judgement_system.objects.filter(course_id=p1)
     return render(request, 'judgement.html', {'judgement': judges})
+
+
+def add_judgement(request):
+    info = request.params['data']
+
+    # 从请求消息中 获取要添加评论的信息
+    # 并且插入到数据库中
+    # 返回值 就是插入使得否正确
+    record = judgement_system.objects.create(name=info['name'],
+                                             course=['course'],
+                                             mark=info['mark'],
+                                             time_for_homework=info['time_for_homework'],
+                                             the_constitution_of_grade=info['the_constitution_of_grade'],
+                                             comment_of_the_course=info['comment_of_the_course'],
+                                             comment_of_the_teacher=info['comment_of_the_teacher'])
+
+    return render(request, {'ret': 0})  # 注意，还没有添加HTML文件
