@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0007_auto_20200503_2224.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0008_auto_20200503_2229.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0009_auto_20200503_2233.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0010_auto_20200503_2235.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0011_auto_20200503_2235.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0013_auto_20200505_2204.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -229,6 +225,8 @@
       <workItem from="1588472239058" duration="125000" />
       <workItem from="1588478167355" duration="32000" />
       <workItem from="1588511644973" duration="2371000" />
+      <workItem from="1588687243464" duration="115000" />
+      <workItem from="1588687404442" duration="189000" />
     </task>
     <servers />
   </component>
@@ -331,10 +329,10 @@
     <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1588471345395" />
     <state x="46" y="39" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588176468454" />
     <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1588165085352" />
-    <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog" timestamp="1587344618265">
+    <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog" timestamp="1588687483389">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1587344618265" />
+    <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog/0.0.1440.860@0.0.1440.860" timestamp="1588687483389" />
     <state x="366" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1588478167609">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
