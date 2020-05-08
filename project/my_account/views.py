@@ -23,6 +23,9 @@ def modify_judgement(request):
         comment_of_the_teacher = request.POST.get("comment_of_the_teacher")
         the_constitution_of_grade = request.POST.get("the_constitution_of_grade ")
         time_for_homework = request.POST.get("time_for_homework")
+        hard_core_mark = request.POST.get("hard_core_mark")
+        recommend_mark = request.POST.get("recommend_mark")
+        mark_of_interest = request.POST.get("mark_of_interest")
         judge = request.POST.get("id")
         modify_judge = judgement_system.objects.filter(id=judge)
         course_id = modify_judge[0].course_id
@@ -36,5 +39,16 @@ def modify_judgement(request):
                          the_constitution_of_grade=the_constitution_of_grade,
                          time_for_homework=time_for_homework,
                          course_id=course_id,
+                         hard_core_mark=hard_core_mark,
+                         recommend_mark=recommend_mark,
+                         mark_of_interest=mark_of_interest,
                          name_id=user_id).save()
+    return redirect("/my_account/")
+
+
+def delete(request):
+    if request.method == "POST":
+        judge = request.POST.get("id")
+        delete_judge = judgement_system.objects.filter(id=judge)
+        delete_judge.delete()
     return redirect("/my_account/")

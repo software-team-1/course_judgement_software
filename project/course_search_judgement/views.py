@@ -27,6 +27,10 @@ def search_result(request):
         text = {}
         for course_s in courses:
             judges = judgement_system.objects.filter(course_id=course_s.id)
+            i = 1
+            for judge in judges:
+                judge.judgement_id = i
+                i = i + 1
             text[course_s.id] = judges
         return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 

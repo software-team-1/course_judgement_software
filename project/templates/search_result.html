@@ -15,7 +15,10 @@
             {% for key, judges in judgement.items %}
                 {% if key == course.id %}
                     {% for judge in judges %}
-                        <li>{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>
+                        <p>评论{{ judge.judgement_id }}</p>
+                        <li>{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-
+                            {{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}-
+                        {{ judge.hard_core_mark }}-{{ judge.recommend_mark }}-{{ judge.mark_of_interest }}</li>
                     {% endfor %}
                 {% endif %}
             {% endfor %}
