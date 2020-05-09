@@ -1,0 +1,88 @@
+#content-box{
+    margin-top: 20px;
+    display: block;
+}
+/*.container{*/
+/*    margin: auto auto;*/
+/*}*/
+
+.pic{
+    margin-top: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    width: 100%;
+}
+
+#course-info{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "微软雅黑 Light";
+    font-weight: bold;
+}
+
+#course-info:link{
+    color: #0f0f0f;
+}
+
+#course-info:hover{
+    color: #9954BB;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+}
+
+.date{
+    float: right;
+}
+
+.emphasize{
+    font-weight: bold;
+}
+
+.table{
+    font-size: 15px;
+    font-family: 宋体;
+}
+
+body{
+    position:relative;
+}
+
+.star-vote{
+    width:120px;
+    height:20px;
+    position:relative;
+    overflow:hidden;
+    display: inline;
+}
+
+.star-vote>span{
+    position:absolute;
+    width:120px;
+    height:20px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    left:0px;
+    top:0px;
+}
+
+.star-vote>.add-star{
+    background-image:url("../img/star.png");
+}
+
+.star-vote>.del-star{
+    background-image:url("../img/star-trans.png");
+    background-color:white;
+}
+
+.error{
+    font-size: 30px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}

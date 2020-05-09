@@ -1,31 +1,112 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>judgement</title>
-</head>
-<body>
-<p>你查询的课程名: <strong>{{ query }}</strong></p>
+{% extends 'log_sign/base.html' %}
+{% load static %}
+{% block title %}judgement{% endblock %}
+{% block css %}
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="{% static 'css/search_result.css' %}" rel="stylesheet"/>
+{% endblock %}
 
-{% if courses %}
-    <p> 找到 {{ courses|length }} 个课程 </p>
-    <ul>
-        {% for course in courses %}
-            <li>{{ course.id }}-{{ course.name }}-{{ course.teacher }}-{{ course.credit }}</li>
-            {% for key, judges in judgement.items %}
-                {% if key == course.id %}
-                    {% for judge in judges %}
-                        <p>评论{{ judge.judgement_id }}</p>
-                        <li>{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-
-                            {{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}-
-                        {{ judge.hard_core_mark }}-{{ judge.recommend_mark }}-{{ judge.mark_of_interest }}</li>
-                    {% endfor %}
-                {% endif %}
-            {% endfor %}
-        {% endfor %}
-    </ul>
+{% block content %}
+    {% if courses %}
+        <div class="pic">
+        <img src={% static "/img/blue.png" %} alt="校徽">
+        </div>
+    {% for course in courses %}
+        <div class="col-md-8 col-md-offset-2" id="content-box" >
+            <div class="panel-group" id="accordion{{course.id}}" >
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{course.id}}"  href="#collapse{{course.id}}">
+    {#                        <script type="text/javascript">#}
+    {#                            element = document.getElementById("course-info")#}
+    {#                            element.href = "#collapse" + {{course.id}}#}
+    {#                            element.setAttribute("data-parent","#accordion" + {{course.id}})#}
+    {#                        </script>#}
+                            <table class="title" style="table-layout: fixed;">
+                            <tr><td>课程：{{ course.name }}</td><td>老师：{{ course.teacher }}</td><td>类别：{{ course.type }}</td><td>学分：{{ course.credit }}</td></tr>
+                            </table>
+                        </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapse{{course.id}}"  class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                {% for key, judges in judgement.items %}
+                                    {% if key == course.id %}
+                                        {% for judge in judges %}
+                                            <table class="table table-bordered" style="table-layout: fixed;margin-top: 20px;">
+                                            <tr>
+                                                <td colspan="3"><span class="emphasize">评论</span><span class="date">{{ judge.create_date }}</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="1">
+                                                    <span class="emphasize">硬核指数：</span>
+                                                    <div id="star_con" class="star-vote">
+                                                        <span id="add_star" class="add-star"></span>
+                                                        <span id="del_star" class="del-star"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="1">
+                                                    <span class="emphasize">兴趣指数：</span>
+                                                    <div id="star_con" class="star-vote">
+                                                        <span id="add_star" class="add-star"></span>
+                                                        <span id="del_star" class="del-star"></span>
+                                                    </div>
+                                                </td>
+                                                <td colspan="1">
+                                                    <span class="emphasize">推荐指数：</span>
+                                                    <div id="star_con" class="star-vote">
+                                                        <span id="add_star" class="add-star"></span>
+                                                        <span id="del_star" class="del-star"></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><span class="emphasize">课程评价：</span>{{ judge.comment_of_the_course}}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><span class="emphasize">老师评价：</span>{{ judge.comment_of_the_teacher }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><span class="emphasize">成绩构成：</span>{{ judge.the_constitution_of_grade }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><span class="emphasize">作业估时：</span>{{ judge.time_for_homework }}</td>
+                                            </tr>
+                                            </table>
+{#                                            <li class="list-group-item">{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>#}
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+        <script>
+            window.onload=showStar(10);
+
+            //n表示后台获取的星数
+            function showStar(n){
+                var con_wid=document.getElementById("star_con").offsetWidth;
+                var del_star=document.getElementById("del_star");
+                console.log(con_wid);
+
+                //透明星星移动的像素
+                var del_move=(n*con_wid)/10;
+
+                del_star.style.backgroundPosition=-del_move+"px 0px";
+                del_star.style.left=del_move+"px";
+            }
+        </script>
 {% else %}
-    <p> 没有找到对应的课程 </p>
+    <p class="error"> 没有找到对应的课程！ </p>
 {% endif %}
-</body>
-</html>
+
+{% endblock %}
