@@ -11,7 +11,7 @@
     <div class="search">
      {% csrf_token%}
     <form action="/search_result/" method="post">
-<img src={% static "/img/xiaohui.png"  %} alt="">
+        <img src={% static "/img/xiaohui.png"  %} alt="">
         <input type="text" name="q" placeholder="请输入搜索条件">
         <button type="submit" value="搜索">搜索</button>
     </form>
