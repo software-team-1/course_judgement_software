@@ -22,19 +22,47 @@ def search_result(request):
     #     return render(request, 'search_from.html', {'error': True})
 
     if request.POST:
-        q = request.POST['q']
-        if not q:
+        q = request.POST.get('q') #q是搜索框里搜索的课程
+        p = request.POST.get('p') #p是搜索框下方的给定分类
+
+        if not q and not p:
             return render(request, 'search_from.html', {'error': True})
-        courses = course.objects.filter(name__contains=q)
-        text = {}
-        for course_s in courses:
-            judges = judgement_system.objects.filter(course_id=course_s.id)
-            i = 1
-            for judge in judges:
-                judge.judgement_id = i
-                i = i + 1
-            text[course_s.id] = judges
-        return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
+
+        if q and not p:
+            courses = course.objects.filter(name__contains=q)
+            text = {}
+            for course_s in courses:
+                judges = judgement_system.objects.filter(course_id=course_s.id)
+                i = 1
+                for judge in judges:
+                    judge.judgement_id = i
+                    i = i + 1
+                text[course_s.id] = judges
+            return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
+
+        if p and not q:
+            courses = course.objects.filter(type__contains=p)
+            text = {}
+            for course_s in courses:
+                judges = judgement_system.objects.filter(course_id=course_s.id)
+                i = 1
+                for judge in judges:
+                    judge.judgement_id = i
+                    i = i + 1
+                text[course_s.id] = judges
+            return render(request, 'search_result.html', {'courses': courses, 'query': p, 'judgement': text})
+
+        if p and q:
+            courses = course.objects.filter(name__contains=q, type__contains=p)
+            text = {}
+            for course_s in courses:
+                judges = judgement_system.objects.filter(course_id=course_s.id)
+                i = 1
+                for judge in judges:
+                    judge.judgement_id = i
+                    i = i + 1
+                text[course_s.id] = judges
+            return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 
     else:
         return render(request, 'search_from.html', {'error': True})
