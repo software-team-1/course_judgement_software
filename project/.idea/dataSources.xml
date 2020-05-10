@@ -41,7 +41,7 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/project/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Codes\software group1\course_judgement_software\project\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\apple\Desktop\作业myc\course_judgement_software\project\db.sqlite3</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="db.sqlite3 [2]" uuid="f3e3c292-60ca-4107-a3be-5ac74688a372">
       <driver-ref>sqlite.xerial</driver-ref>
@@ -60,6 +60,12 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\apple\Desktop\作业myc\course_judgement_software\project\db.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db.sqlite3 [4]" uuid="aed79e6a-8c26-4962-acf5-34a74fa816dc">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
     </data-source>
   </component>
 </project>
