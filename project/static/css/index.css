@@ -1,37 +1,36 @@
 .container{
     margin: 0px auto;
     padding: 0px;
-    border:none;
-    height:auto;
-    width:auto;
+    border: none;
+    height: auto;
+    width: auto;
 }
 .head{
-    height:8vh;
+    height: 8vh;
     background-color: dodgerblue;
     background-size: 100% 100%;
-    padding:5px;
+    padding: 5px;
 
-    -moz-box-shadow:2px 2px 5px #333333;
-    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333;
+    -moz-box-shadow: 2px 2px 5px #333333;
+    -webkit-box-shadow: 2px 2px 5px #333333;
     /*box-shadow: 7px 15px 30px #285a63;*/
 
     border-radius: 5px;
 
-    -webkit-filter:brightness(1);
-    -o-filter:brightness(0.9);
-    -moz-filter:brightness(0.9);
-    filter:brightness(0.9);
+    -webkit-filter: brightness(1);
+    filter: brightness(0.9);
 }
 
 .head-right{
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
-    float:right;
+    float: right;
     width: 80px;
-    height:8vh;
+    height: 8vh;
     margin: 0px;
-    position:relative;
-    right:2vw;
+    position: relative;
+    right: 2vw;
     background-color: transparent;
 }
 .head-right span{
@@ -44,14 +43,14 @@
     left: 25%;
 }
 .head-middle{
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
-    float:right;
+    float: right;
     width: 80px;
     height:8vh;
     margin: 0px;
-    position:relative;
-    right:3vw;
+    position: relative;
+    right: 3vw;
     background-color: transparent;
 }
 .head-middle span{
@@ -66,5 +65,5 @@
 .middle{
     height: 100vh;
     background: url("../img/bg-text.png")no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }

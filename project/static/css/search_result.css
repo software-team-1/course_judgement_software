@@ -51,34 +51,34 @@ img{
 }
 
 body{
-    position:relative;
+    position: relative;
 }
 
 .star-vote{
-    width:120px;
-    height:20px;
-    position:relative;
-    overflow:hidden;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
     display: inline;
 }
 
 .star-vote>span{
-    position:absolute;
-    width:120px;
-    height:20px;
-    background-size:cover;
-    background-repeat:no-repeat;
-    left:0px;
-    top:0px;
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
 }
 
 .star-vote>.add-star{
-    background-image:url("../img/star.png");
+    background-image: url("../img/star.png");
 }
 
 .star-vote>.del-star{
-    background-image:url("../img/star-trans.png");
-    background-color:white;
+    background-image: url("../img/star-trans.png");
+    background-color: white;
 }
 
 .error{

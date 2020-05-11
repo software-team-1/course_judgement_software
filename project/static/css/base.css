@@ -1,14 +1,15 @@
 .navbar.navbar-default{
-    margin:auto;
+    margin: auto;
 
     background-color: dodgerblue;
     border-color: cornflowerblue;
 
-    -webkit-filter:brightness(0.92);
-    filter:brightness(0.92);
+    -webkit-filter: brightness(0.92);
+    filter: brightness(0.92);
 
-    -moz-box-shadow:2px 2px 5px #333333;
-    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333;
+    -moz-box-shadow: 2px 2px 5px #333333;
+    -webkit-box-shadow: 2px 2px 5px #333333;
 }
 
 
