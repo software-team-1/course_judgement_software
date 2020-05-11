@@ -1,6 +1,7 @@
 #content-box{
     margin-top: 20px;
     display: block;
+    z-index: 10;
 }
 /*.container{*/
 /*    margin: auto auto;*/
@@ -8,7 +9,7 @@
 
 .pic{
     margin-top: 20px;
-    width: 600px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,6 +36,7 @@ img{
 .title{
     width: 100%;
     text-align: center;
+    font-size: 18px;
 }
 
 .date{
@@ -43,6 +45,7 @@ img{
 
 .emphasize{
     font-weight: bold;
+    float:left;
 }
 
 .table{
@@ -51,38 +54,91 @@ img{
 }
 
 body{
-    position: relative;
+    position:relative;
 }
 
 .star-vote{
-    width: 120px;
-    height: 20px;
-    position: relative;
-    overflow: hidden;
+    width:120px;
+    height:20px;
+    position:relative;
+    overflow:hidden;
     display: inline;
 }
 
 .star-vote>span{
-    position: absolute;
-    width: 120px;
-    height: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 0px;
-    top: 0px;
+    position:absolute;
+    width:120px;
+    height:20px;
+    background-size:cover;
+    background-repeat:no-repeat;
+    left:0px;
+    top:0px;
 }
 
 .star-vote>.add-star{
-    background-image: url("../img/star.png");
+    background-image:url("../img/star.png");
 }
 
 .star-vote>.del-star{
-    background-image: url("../img/star-trans.png");
-    background-color: white;
+    background-image:url("../img/star-trans.png");
+    background-color:white;
 }
 
 .error{
     font-size: 30px;
     font-family: 微软雅黑;
     font-weight: bold;
+}
+
+#icon1{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#icon2{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#icon3{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#icon4{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.rating{
+    float:right;
+    display:inline;
+}
+
+#pic-box{
+    /*width: 20vw;*/
+    height: 25vw;
+    background: url("../img/shuiyin.jpg")no-repeat;
+    background-size:100% 100%;
+
+    position: fixed;
+    bottom: 30px;
+    z-index: 5;
+}
+#bg{
+    width:100vw;
+    background-color: whitesmoke;
+    background-size:100% 100%;
 }
