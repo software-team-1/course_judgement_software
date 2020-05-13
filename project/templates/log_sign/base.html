@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="zh-Hans">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,39 +16,39 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     {% block css %}{% endblock %}
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+        <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav" aria-expanded="false">
-            <span class="sr-only">切换导航条</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{% url 'log_sign:home'%}" style="color:white">课程网站</a>
-        </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-nav" aria-expanded="false">
+                    <span class="sr-only">切换导航条</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'log_sign:home'%}" style="color:white">课程网站</a>
+            </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="my-nav">
-          <ul class="nav navbar-nav navbar-right">
-                {% if user.is_authenticated %}
-                    <li><a href="{% url 'course_search_judgement:search_from'%}" style="color:white">搜索</a></li>
-                    <li><a href="{% url 'my_account:my_account'%}" style="color:white">个人中心</a></li>
-                    <li><a href="{% url 'log_sign:logout'%}" style="color:white">退出</a></li>
-                {% else %}
-                    <li><a href="{% url 'log_sign:login'%}" style="color:white">登录</a></li>
-                    <li><a href="{% url 'log_sign:register'%}" style="color:white">注册</a></li>
-                {% endif %}
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+            <div class="collapse navbar-collapse" id="my-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'course_search_judgement:search_from'%}" style="color:white">搜索</a></li>
+                        <li><a href="{% url 'my_account:my_account'%}" style="color:white">个人中心</a></li>
+                        <li><a href="{% url 'log_sign:logout'%}" style="color:white">退出</a></li>
+                    {% else %}
+                        <li><a href="{% url 'log_sign:login'%}" style="color:white">登录</a></li>
+                        <li><a href="{% url 'log_sign:register'%}" style="color:white">注册</a></li>
+                    {% endif %}
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
 
     {% block content %}{% endblock %}
@@ -56,5 +56,5 @@
 {#    <script src="{% static 'bootstrap/js/jquery-3.2.1.js' %}"></script>#}
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-  </body>
+</body>
 </html>

@@ -12,7 +12,7 @@
 
 {% block content %}
     {% if courses %}
-        <div class="pic">
+        <div class="picture">
         <img src={% static "/img/blue.png" %} alt="校徽">
         </div>
     {% for course in courses %}
@@ -21,16 +21,21 @@
                 <div class="panel panel-default" >
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{course.id}}"  href="#collapse{{course.id}}">
+                            <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{course.id}}"  href="#collapse{{course.id}}">
     {#                        <script type="text/javascript">#}
     {#                            element = document.getElementById("course-info")#}
     {#                            element.href = "#collapse" + {{course.id}}#}
     {#                            element.setAttribute("data-parent","#accordion" + {{course.id}})#}
     {#                        </script>#}
-                            <table class="title" style="table-layout: fixed;">
-                            <tr><td>课程：{{ course.name }}</td><td>老师：{{ course.teacher }}</td><td>类别：{{ course.type }}</td><td>学分：{{ course.credit }}</td></tr>
-                            </table>
-                        </a>
+                                <table class="title" style="table-layout: fixed;">
+                                    <tr>
+                                        <td>课程：{{ course.name }}</td>
+                                        <td>老师：{{ course.teacher }}</td>
+                                        <td>类别：{{ course.type }}</td>
+                                        <td>学分：{{ course.credit }}</td>
+                                    </tr>
+                                </table>
+                            </a>
                         </h4>
                     </div>
 
@@ -41,50 +46,59 @@
                                     {% if key == course.id %}
                                         {% for judge in judges %}
                                             <table class="table table-bordered" style="table-layout: fixed;margin-top: 20px;">
-                                            <tr>
-                                                <td colspan="3"><span class="emphasize">评论{{ judge.judgement_id }}</span>
-                                                    <span class="date"><small>编辑于：{{ judge.create_date }}</small></span>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="1">
-                                                    <span class="emphasize">硬核指数：</span>
-                                                    <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.hard_core_mark }} >
-{#                                                    <div id="star_con" class="star-vote">#}
-{#                                                        <span id="add_star" class="add-star"></span>#}
-{#                                                        <span id="del_star" class="del-star"></span>#}
-{#                                                    </div>#}
-                                                </td>
-                                                <td colspan="1">
-                                                    <span class="emphasize">兴趣指数：</span>
-                                                    <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.mark_of_interest }} >
-                                                </td>
-                                                <td colspan="1">
-                                                    <span class="emphasize">推荐指数：</span>
-                                                    <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.recommend_mark }} >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3"><button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
-                                                        <span class="glyphicon glyphicon-pencil"></span> 课程评价</button>
-                                                    {{ judge.comment_of_the_course}}</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3"><button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
-                                                        <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
-                                                    {{ judge.comment_of_the_teacher }}</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3"><button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
-                                                        <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
-                                                    {{ judge.the_constitution_of_grade }}</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3"><button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
-                                                        <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
-                                                    {{ judge.time_for_homework }}</td>
-                                            </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <span class="emphasize">评论{{ judge.judgement_id }}</span>
+                                                        <span class="date"><small>编辑于：{{ judge.create_date }}</small></span>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">硬核指数：</span>
+                                                        <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.hard_core_mark }}>
+{#                                                      <div id="star_con" class="star-vote">#}
+{#                                                          <span id="add_star" class="add-star"></span>#}
+{#                                                          <span id="del_star" class="del-star"></span>#}
+{#                                                      </div>#}
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">兴趣指数：</span>
+                                                        <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.mark_of_interest }}>
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">推荐指数：</span>
+                                                        <input id="testId" name="testName" class="rating"  min="0" max="10" data-size="15" value={{ judge.recommend_mark }}>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
+                                                            <span class="glyphicon glyphicon-pencil"></span> 课程评价</button>
+                                                        {{ judge.comment_of_the_course}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
+                                                            <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
+                                                        {{ judge.comment_of_the_teacher }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
+                                                            <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
+                                                        {{ judge.the_constitution_of_grade }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
+                                                            <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
+                                                        {{ judge.time_for_homework }}
+                                                    </td>
+                                                </tr>
                                             </table>
-{#                                            <li class="list-group-item">{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>#}
+{#                                              <li class="list-group-item">{{ judge.comment_of_the_course}}-{{ judge.comment_of_the_teacher }}-{{ judge.comment_of_the_grade }}-{{ judge.time_for_homework }}</li>#}
                                         {% endfor %}
                                     {% endif %}
                                 {% endfor %}
@@ -114,7 +128,7 @@
 {% else %}
     <p class="error"> 没有找到对应的课程！ </p>
 {% endif %}
-    <div class="col-md-4 col-md-offset-4" id="pic-box" >
+    <div class="col-md-4 col-md-offset-4" id="pic-box">
 
     </div>
 <script>

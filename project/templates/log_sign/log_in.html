@@ -13,21 +13,20 @@
                 {% csrf_token %}
                 <h4 class="text-center" style="font-size: 20px">登录</h4>
                 <div class="form-group">
-                  <label for="username" class="col-sm-3 control-label">用户名:</label>
-                  <div class="col-sm-9">
-                      <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
-                  </div>
+                    <label for="username" class="col-sm-3 control-label">用户名:</label>
+                    <div class="col-sm-9">
+                        <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
+                    </div>
                 </div>
                 <div class="form-group">
-                  <label for="id_password1" class="col-sm-3 control-label">密码:</label>
-                  <div class="col-sm-9">
-                      <input type="password" name='password' class="form-control" id="id_password" placeholder="Password" required>
-                  </div>
+                    <label for="id_password1" class="col-sm-3 control-label">密码:</label>
+                    <div class="col-sm-9">
+                        <input type="password" name='password' class="form-control" id="id_password" placeholder="Password" required>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">登录</button>
             </form>
         </div>
-
     </div> <!-- /container -->
 {% endblock %}
 
