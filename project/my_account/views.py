@@ -3,6 +3,7 @@ from datetime import datetime
 from django.shortcuts import render, redirect
 from course_search_judgement.models import course, judgement_system
 from log_sign.models import normal_user
+from django.contrib.auth.models import User
 
 
 def my_account(request):
@@ -10,6 +11,11 @@ def my_account(request):
     user_ = normal_user.objects.filter(user=user)
     user_id = user_[0].id
     judges = judgement_system.objects.filter(name_id=user_id)
+    normal_user_ = normal_user.objects.filter(id=user_id)
+    judges.student_number = normal_user_[0].student_number
+    judges.phone = normal_user_[0].phone
+    auth_ = User.objects.filter(id=normal_user_[0].user_id)
+    judges.email = auth_[0].email
     for judge in judges:
         my_course = course.objects.filter(id=judge.course_id)
         judge.course_name = my_course[0].name

@@ -43,6 +43,8 @@ def register(request):
             normal_user(user=user, student_number=register_forms.cleaned_data['student_number'], phone=register_forms.cleaned_data['phone']).save()
             login(request, user)
             return redirect("log_sign:home")
+        else:
+            return render(request, 'log_sign/register.html', {'error': '注册失败'})
     else:
         register_forms = normal_user_form()
     text = {'register_forms': register_forms}
