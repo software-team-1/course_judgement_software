@@ -107,3 +107,7 @@ def add_judgement(request):
                          name_id=user_id).save()
 
     return redirect("/search_result/")  # 注意，还没有添加HTML文件
+
+
+def add_review(request, id):
+    return render(request, 'add_review.html')

@@ -121,3 +121,9 @@ body{
     background-color: whitesmoke;
     background-size: 100% 100%;
 }
+
+#add-button{
+    padding: 7px;
+    font-size: 16px;
+    background-color: black;
+}

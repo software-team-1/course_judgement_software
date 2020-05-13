@@ -2,115 +2,22 @@
 {% load static %}
 {% block title %}judgement{% endblock %}
 {% block css %}
-    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="{% static 'bootstrap/js/star-rating.js'%}" type="text/javascript"></script>
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'bootstrap/css/star-rating.css'%}" media="all" rel="stylesheet" type="text/css"/>
+    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="{% static 'css/search_result.css' %}" rel="stylesheet"/>
+    <link href="{% static 'bootstrap/css/star-rating.css'%}" media="all" rel="stylesheet" type="text/css"/>
+    <script src="{% static 'bootstrap/js/star-rating.js'%}" type="text/javascript"></script>
 {% endblock %}
 
 {% block content %}
-
     {% if courses %}
         <div class="picture">
         <img src={% static "/img/blue.png" %} alt="校徽">
         </div>
     {% for course in courses %}
-<div class="modal fade" id="modal{{ course.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
-   <div class="modal-dialog">
-      <div class="modal-content">
-         <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">× </button>
-            <h4 class="modal-title" id="myModalLabel">添加课程评论</h4>
-         </div>
-          <form action="/add_judgement/submit" method="post">
-         <div class="modal-body">
-             <table class="table table-bordered" id="add-table" style="table-layout: fixed;margin-top: 20px;">
-
-                <tr>
-                    <td colspan="1">
-                        <span class="emphasize">课程编号：</span>
-                        <input type="int" name="course_id" value="{{ course.id }}">
-                    </td>
-{#                    <td colspan="1">#}
-{#                        课程名称：{{ course.name }}#}
-{#                    </td>#}
-{#                    <td colspan="1">#}
-{#                        授课教师：{{ course.teacher }}#}
-{#                    </td>#}
-                </tr>
-                <tr>
-{#                                                    <script>f({{ course.id }})</script>#}
-                    <td colspan="1">
-                        <span class="emphasize">硬核指数：</span>
-                        <input type="int" id="star4" name="hard_core_mark" >
-{#                                                        <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15">#}
-                    </td>
-                    <td colspan="1">
-                        <span class="emphasize">兴趣指数：</span>
-                        <input type="int" id="star5" name="mark_of_interest" >
-{#                                                        <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15">#}
-                    </td>
-                    <td colspan="1">
-                        <span class="emphasize">推荐指数：</span>
-                        <input type="int" id="star6" name="recommend_mark" >
-{#                                                        <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15">#}
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
-                            <span class="glyphicon glyphicon-pencil"></span> 课程评价</button>
-                        <input type="text" name="comment_of_the_course">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
-                            <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
-                        <input type="text" name="comment_of_the_teacher">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
-                            <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
-                        <input type="text" name="the_constitution_of_grade ">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
-                            <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
-                        <input type="text" name="time_for_homework">
-                    </td>
-                </tr>
-{#                <tr>#}
-{#                    <td colspan="3">#}
-{#                        <input type="submit" value="submit">#}
-{#                    </td>#}
-{#                </tr>#}
-
-            </table>
-         </div>
-         <div class="modal-footer">
-            <button type="button" class="btn btn-default"
-               data-dismiss="modal">关闭            </button>
-            <button type="submit" class="btn btn-primary">提交</button>
-         </div>
-          </form>
-      </div><!-- /.modal-content -->
-   </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<script>
-   $(function () { $('#myModal').modal({
-      keyboard: true
-   })});
-</script>
         <div class="col-md-8 col-md-offset-2" id="content-box" >
             <div class="panel-group" id="accordion{{course.id}}" >
-
                 <div class="panel panel-default" >
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -120,7 +27,7 @@
     {#                            element.href = "#collapse" + {{course.id}}#}
     {#                            element.setAttribute("data-parent","#accordion" + {{course.id}})#}
     {#                        </script>#}
-                                <table class="title" style="table-layout: fixed; font-family: 宋体;font-weight: bold;">
+                                <table class="title" style="table-layout: fixed;">
                                     <tr>
                                         <td>课程：{{ course.name }}</td>
                                         <td>老师：{{ course.teacher }}</td>
@@ -134,8 +41,11 @@
 
                     <div id="collapse{{course.id}}"  class="panel-collapse collapse in">
                         <div class="panel-body">
-                            <button class="btn btn-primary btn-lg btn-block" id="add_button" data-toggle="modal"
-                                    data-target="#modal{{ course.id }}" style="padding: 7px;font-size:16px">添加评论</button>
+{#                        <a href="/search_from/">#}
+{#                            <button class="btn btn-primary pull-right">添加评论</button>#}
+{#                        </a>#}
+{#                        <button type="button" class="btn btn-primary pull-right" id="testBotton"#}
+{#                                onclick="f('{{ course.id }}')">添加评论</button>#}
                             <ul class="list-group">
                                 {% for key, judges in judgement.items %}
                                     {% if key == course.id %}
@@ -197,7 +107,62 @@
                                         {% endfor %}
                                     {% endif %}
                                 {% endfor %}
-
+                                                <table class="table table-bordered" style="table-layout: fixed;margin-top: 20px;">
+{#                                                <tr>#}
+{#                                                    <td colspan="3">#}
+{#                                                        <span class="emphasize">课程{{ course.id }}</span>#}
+{#                                                </tr>#}
+                                                <form action="/add_judgement/submit" method="post">
+                                                <tr>
+                                                    <script>f({{ course.id }})</script>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">硬核指数：</span>
+                                                        <input id="star4" name="testName" class="rating"  min="0" max="10" data-size="15" value="0">
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">兴趣指数：</span>
+                                                        <input id="star5" name="testName" class="rating"  min="0" max="10" data-size="15" value="0">
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">推荐指数：</span>
+                                                        <input id="star6" name="testName" class="rating"  min="0" max="10" data-size="15" value="0">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
+                                                            <span class="glyphicon glyphicon-pencil"></span> 课程评价</button>
+                                                        <input type="text" name="comment_of_the_course">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
+                                                            <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
+                                                        <input type="text" name="comment_of_the_teacher">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
+                                                            <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
+                                                        <input type="text" name="the_constitution_of_grade ">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
+                                                            <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
+                                                        <input type="text" name="time_for_homework">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <input type="submit" value="submit">
+                                                    </td>
+                                                </tr>
+                                                </form>
+                                            </table>
                             </ul>
                         </div>
                     </div>
