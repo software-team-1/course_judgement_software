@@ -1,8 +1,9 @@
 .home-bg{
     margin: 0;
     padding: 0;
-    border: none;
     height: 100vh;
+    border: none;
+
     background: url("../img/bg-text.png")no-repeat;
     background-size: 100% 100%;
 }

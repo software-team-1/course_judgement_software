@@ -9,11 +9,10 @@
     <div class="img">
     </div>
     <div class="search">
-     {% csrf_token%}
+        {% csrf_token%}
         <form action="/search_result/" method="post">
             <img src={% static "/img/xiaohui.png" %} alt="校徽">
-            <input type="text" name="q" placeholder="请输入搜索条件" onFocus="if(value==defaultValue){value='';this.style.color='#000'}"
-                   onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999">
+            <input type="text" name="q" placeholder="请输入搜索条件" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="color:#999999">
             <button type="submit" value="搜索">搜索</button>
             <button type="submit" name="p" class="category" value ="人文学科">人文学科</button>&nbsp&nbsp
             <button type="submit" name="p" class="category" value ="社会科学">社会科学</button>&nbsp&nbsp

@@ -4,15 +4,12 @@
     display: block;
     z-index: 10;
 }
-/*.container{*/
-/*    margin: auto auto;*/
-/*}*/
 
 .picture{
     margin-top: 20px;
-    width: 500px;
     margin-left: auto;
     margin-right: auto;
+    width: 500px;
 }
 
 img{
@@ -20,10 +17,10 @@ img{
 }
 
 #course-info{
-    text-decoration: none;
     font-size: 20px;
     font-family: "微软雅黑 Light";
     font-weight: bold;
+    text-decoration: none;
 }
 
 #course-info:link{
@@ -107,18 +104,18 @@ body{
 }
 
 #pic-box{
-    /*width: 20vw;*/
-    height: 25vw;
     background: url("../img/shuiyin.jpg")no-repeat;
     background-size: 100% 100%;
 
-    position: fixed;
+    height: 25vw;
     bottom: 30px;
-    z-index: 5;
+    position: fixed;
+    z-index: -1;
 }
 
 #bg{
     width: 100vw;
+
     background-color: whitesmoke;
     background-size: 100% 100%;
 }
@@ -126,11 +123,12 @@ body{
 #add-button{
     padding: 7px;
     font-size: 16px;
+
     background-color: black;
 }
 
 .form-control{
+    width: 80%;
     display: inline;
-    float:right;
-    width:80%;
+    float: right;
 }

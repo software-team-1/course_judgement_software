@@ -1,21 +1,21 @@
 .container{
     background: url("../img/bg-amb.png")no-repeat;
-    /*background-attachment:fixed;*/
+    background-size: 100vw 100vh;
 
     margin: auto;
     padding: 0;
-    border: none;
-    height: 100vh;
     width: 100vw;
-    background-size: 100vw 100vh;
+    height: 100vh;
+    border: none;
 }
 
 .img{
     background: url("../img/xiaohui.png" );
     background-size: 100% 100%;
-    position: absolute;
-    height: 20vh;
+
     width: 36vw;
+    height: 20vh;
+    position: absolute;
     top: 60%;
     left: 30%;
 }
@@ -34,16 +34,22 @@ div.search form input:nth-child(2){
     font-size: 30px;
     text-indent: 40px;
     border: none;
-    border-radius: 10px;
     background-color: rgba(245, 245, 245, 0.7);
     float: left;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
     box-shadow: 3px 3px 5px grey inset, 0 0 5px grey;
-    -webkit-box-shadow: 3px 3px 5px grey inset, 0 0 5px grey;
     -moz-box-shadow: 3px 3px 5px grey inset, 0 0 5px grey;
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -webkit-box-shadow: 3px 3px 5px grey inset, 0 0 5px grey;
+    -o-box-shadow: 3px 3px 5px grey inset, 0 0 5px grey;
+
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     -moz-transition: border-color ease-in-out .15s,-moz-box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
 }
 
 div.search form button:nth-child(3){
@@ -56,20 +62,27 @@ div.search form button:nth-child(3){
     font-size: 30px;
     color: #c4c4c4;
     letter-spacing: 5px;
+    background-color: rgba(30, 144, 255, 0.71);
+
     border-top: 2px solid grey;
     border-left: 2px solid grey;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+
     border-radius: 10px;
-    background-color: rgba(30, 144, 255, 0.71);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
     box-shadow: 5px 5px 5px #333333;
-    -webkit-box-shadow: 5px 5px 5px #333333;
     -moz-box-shadow: 5px 5px 5px #333333;
+    -webkit-box-shadow: 5px 5px 5px #333333;
+    -o-box-shadow: 5px 5px 5px #333333;
     text-shadow: 2px 2px 5px #333333;
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     -moz-transition: border-color ease-in-out .15s,-moz-box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
 }
 
 div.search form button:nth-child(3):hover{
@@ -92,16 +105,19 @@ div.search form img{
     width: 165px;
     height: 50px;
     position: relative;
-    /*border-radius: 15px;*/
-    border-radius: 10px;
     font-size: 20px;
     color: #c4c4c4;
-    /*background-color: dodgerblue;*/
     background-color: transparent;
     border-color: #686868;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
     box-shadow: 5px 5px 5px #333333;
     -moz-box-shadow: 5px 5px 5px #333333;
     -webkit-box-shadow: 5px 5px 5px #333333;
+    -o-box-shadow: 5px 5px 5px #333333;
 }
 
 .category:hover{
