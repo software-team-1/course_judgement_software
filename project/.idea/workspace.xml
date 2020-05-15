@@ -20,68 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/course_search_judgement/migrations/0014_auto_20200515_1003.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/thumb_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course_search_judgement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log_sign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/log_sign/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/search_result.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/search_result.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/log_sign/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/log_sign/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search_result.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 4" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [5]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [5]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [5]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3 [5]" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -148,7 +100,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="project.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\web\python.exe" />
+      <option name="SDK_HOME" value="C:\Program Files\Python37\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -266,33 +218,33 @@
       <workItem from="1589365979797" duration="12609000" />
       <workItem from="1589437087704" duration="1791000" />
       <workItem from="1589507702505" duration="7327000" />
+      <workItem from="1589557940349" duration="474000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589508306692">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589557956450">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589366002824" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589557956450" />
     <state x="108" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.860@0.0.1440.860" timestamp="1589508306692" />
     <state x="126" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588204870459" />
     <state x="133" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1620.1040@0.0.1620.1040" timestamp="1589255766427" />
@@ -323,34 +275,34 @@
     <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1589508304726" />
     <state x="505" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588178568744" />
     <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1589265536054" />
-    <state width="1397" height="198" key="GridCell.Tab.0.bottom" timestamp="1589516371447">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1237" height="107" key="GridCell.Tab.0.bottom" timestamp="1589558414728">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="111" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589378601128" />
+    <state width="1237" height="107" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589558414728" />
     <state width="1397" height="198" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1589516371447" />
     <state width="739" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588205206091" />
     <state width="1568" height="269" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1589271738548" />
     <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589337363897" />
-    <state width="1397" height="198" key="GridCell.Tab.0.center" timestamp="1589516371446">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1237" height="107" key="GridCell.Tab.0.center" timestamp="1589558414728">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="111" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589378601128" />
+    <state width="1237" height="107" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589558414728" />
     <state width="1397" height="198" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1589516371446" />
     <state width="739" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588205206091" />
     <state width="1568" height="269" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1589271738548" />
     <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589337363897" />
-    <state width="1397" height="198" key="GridCell.Tab.0.left" timestamp="1589516371445">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1237" height="107" key="GridCell.Tab.0.left" timestamp="1589558414728">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="111" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589378601128" />
+    <state width="1237" height="107" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589558414728" />
     <state width="1397" height="198" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1589516371445" />
     <state width="739" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588205206091" />
     <state width="1568" height="269" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1589271738548" />
     <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589337363897" />
-    <state width="1397" height="198" key="GridCell.Tab.0.right" timestamp="1589516371446">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state width="1237" height="107" key="GridCell.Tab.0.right" timestamp="1589558414728">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="111" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589378601128" />
+    <state width="1237" height="107" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589558414728" />
     <state width="1397" height="198" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1589516371446" />
     <state width="739" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588205206091" />
     <state width="1568" height="269" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1589271738548" />

@@ -11,79 +11,83 @@
 {% endblock %}
 
 {% block content %}
-
     {% if courses %}
         <div class="picture">
         <img src={% static "/img/blue.png" %} alt="校徽">
         </div>
     {% for course in courses %}
-<div class="modal fade" id="modal{{ course.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+<div class="modal fade" id="modal{{ course.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">× </button>
-            <h4 class="modal-title" id="myModalLabel">添加课程评论</h4>
+            <h4 class="modal-title" id="myModalLabel">添加评论</h4>
          </div>
           <form action="/add_judgement/submit" method="post">
          <div class="modal-body">
-             <table class="table table-bordered" id="add-table" style="table-layout: fixed;margin-top: 20px;">
-
+             <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
                 <tr>
-                    <td colspan="1">
-                        <span class="emphasize">课程编号：</span>
-                        <input type="int" name="course_id" value="{{ course.id }}">
+                    <td colspan="2">
+                        <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
                     </td>
-{#                    <td colspan="1">#}
-{#                        课程名称：{{ course.name }}#}
-{#                    </td>#}
-{#                    <td colspan="1">#}
-{#                        授课教师：{{ course.teacher }}#}
-{#                    </td>#}
+                    <td colspan="2">
+                        <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                    </td>
+                    <td colspan="2">
+{#                        <span class="emphasize">课程编号：</span>#}
+                        <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <span class="emphasize">课程名称：</span>
+                        <input class="form-control" readonly="true" type="text" value="{{ course.name }}" style="display: inline;width: 50%;float: right">
+                    </td>
+                    <td colspan="3">
+                        <span class="emphasize">授课教师：</span>
+                        <input class="form-control" readonly="true" type="text" value="{{ course.teacher }}" style="display: inline;width: 50%;float: right">
+                    </td>
                 </tr>
                 <tr>
 {#                                                    <script>f({{ course.id }})</script>#}
-                    <td colspan="1">
+                    <td colspan="2">
                         <span class="emphasize">硬核指数：</span>
-                        <input type="int" id="star4" name="hard_core_mark" >
-{#                                                        <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15">#}
+{#                        <input class="form-control" type="int" id="star4" name="hard_core_mark" style="display: inline;width: 50%;float: right">#}
+                        <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15">
                     </td>
-                    <td colspan="1">
+                    <td colspan="2">
                         <span class="emphasize">兴趣指数：</span>
-                        <input type="int" id="star5" name="mark_of_interest" >
-{#                                                        <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15">#}
+{#                        <input class="form-control" type="int" id="star5" name="mark_of_interest" style="display: inline;width: 50%;float: right">#}
+                        <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15">
                     </td>
-                    <td colspan="1">
+                    <td colspan="2">
                         <span class="emphasize">推荐指数：</span>
-                        <input type="int" id="star6" name="recommend_mark" >
-{#                                                        <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15">#}
+{#                        <input class="form-control" type="int" id="star6" name="recommend_mark" style="display: inline;width: 50%;float: right">#}
+                        <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
-                            <span class="glyphicon glyphicon-pencil"></span> 课程评价</button>
-                        <input type="text" name="comment_of_the_course">
+                    <td colspan="6">
+                        <span class="emphasize">课程评价：</span>
+                        <textarea type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
-                            <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
-                        <input type="text" name="comment_of_the_teacher">
+                    <td colspan="6">
+                        <span class="emphasize">老师评价：</span>
+                        <textarea type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
-                            <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
-                        <input type="text" name="the_constitution_of_grade ">
+                    <td colspan="6">
+                        <span class="emphasize">成绩构成：</span>
+                        <textarea type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right"></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3">
-                        <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
-                            <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
-                        <input type="text" name="time_for_homework">
+                    <td colspan="6">
+                        <span class="emphasize">作业估时：</span>
+                        <textarea type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
                     </td>
                 </tr>
 {#                <tr>#}
@@ -95,9 +99,8 @@
             </table>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-default"
-               data-dismiss="modal">关闭            </button>
-            <button type="submit" class="btn btn-primary">提交</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="display: inline; margin-left:20px;float: left;width: 40%">关闭</button>
+            <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">提交</button>
          </div>
           </form>
       </div><!-- /.modal-content -->
@@ -108,6 +111,7 @@
       keyboard: true
    })});
 </script>
+
         <div class="col-md-8 col-md-offset-2" id="content-box" >
             <div class="panel-group" id="accordion{{course.id}}" >
 
@@ -234,6 +238,7 @@
         step: 1, /*表示增加减少的数量*/
         size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
         showClear: false, /*是否显示清除按钮*/
+        readonly: false,
         {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
         {#readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/#}
         {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
@@ -248,8 +253,8 @@
         step: 1, /*表示增加减少的数量*/
         size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
         showClear: false, /*是否显示清除按钮*/
-        disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/
-        {#readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/#}
+        {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
+        readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/
         {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
         {#starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}#}
         showCaptionAsTitle: false,
