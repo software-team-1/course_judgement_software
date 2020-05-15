@@ -29,3 +29,9 @@ class judgement_system(models.Model):
     the_constitution_of_grade = models.CharField(max_length=50, null=False)  # 综合分数组成
     comment_of_the_course = models.CharField(max_length=300, null=False)  # 课程体验及评价
     comment_of_the_teacher = models.CharField(max_length=300, null=False)  # 教师评价
+    number_of_thumb_up = models.DecimalField(max_digits=3, decimal_places=0, default=0)  # 点赞的数目
+
+
+class thumb_up(models.Model):
+    user_id = models.ForeignKey(normal_user, on_delete=models.CASCADE)
+    judgement_id = models.ForeignKey(judgement_system, on_delete=models.CASCADE)

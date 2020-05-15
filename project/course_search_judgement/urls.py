@@ -8,5 +8,7 @@ urlpatterns = [
     path('add_review/<int:id>/',views.add_review,name='add_review'),
     path('<int:p1>/', views.judgement),
     path('add_judgement/', views.judgement_for_course),  # 提交课程的评价结果
-    path('add_judgement/submit', views.add_judgement)  # 提交课程的评价结果
+    path('add_judgement/submit', views.add_judgement),  # 提交课程的评价结果
+    path('thumb_up/', views.judgement_for_thumb_up),  # 提交课程的评价结果
+    path('thumb_up/submit', views.thumb_up_dealing)  # 提交课程的评价结果
 ]

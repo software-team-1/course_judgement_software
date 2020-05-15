@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .models import course, judgement_system
+from .models import course, judgement_system, thumb_up
 from log_sign.models import normal_user
 from datetime import datetime
 
@@ -22,8 +22,8 @@ def search_result(request):
     #     return render(request, 'search_from.html', {'error': True})
 
     if request.POST:
-        q = request.POST.get('q') #q是搜索框里搜索的课程
-        p = request.POST.get('p') #p是搜索框下方的给定分类
+        q = request.POST.get('q')  # q是搜索框里搜索的课程
+        p = request.POST.get('p')  # p是搜索框下方的给定分类
 
         if not q and not p:
             return render(request, 'search_from.html', {'error': True})
@@ -106,8 +106,32 @@ def add_judgement(request):
                          mark_of_interest=mark_of_interest,
                          name_id=user_id).save()
 
-    return redirect("/search_result/")  # 注意，还没有添加HTML文件
+    return redirect("/search_result/")
 
 
 def add_review(request, id):
     return render(request, 'add_review.html')
+
+
+def judgement_for_thumb_up(request):
+    return render(request, 'thumb_up.html')
+
+
+def thumb_up_dealing(request):
+    if request.method == "POST":
+        comment_id = request.POST.get('judgement_id')
+        user = request.user
+        user_ = normal_user.objects.get(user=user)
+        user_id = user_.id
+        result = thumb_up.objects.filter(user_id=user_id, judgement_id=comment_id)
+        comment = judgement_system.objects.get(id=comment_id)
+        if len(result) == 0:
+            thumb_up(user_id=user_, judgement_id=comment).save()
+            comment.number_of_thumb_up = comment.number_of_thumb_up + 1
+            comment.save()
+        else:
+            good = thumb_up.objects.get(user_id=user_, judgement_id=comment)
+            good.delete()
+            comment.number_of_thumb_up = comment.number_of_thumb_up - 1
+            comment.save()
+    return redirect("/search_result/")
