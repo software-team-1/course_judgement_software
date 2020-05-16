@@ -24,7 +24,9 @@ def search_result(request):
     if request.POST:
         q = request.POST.get('q') #q是搜索框里搜索的课程
         p = request.POST.get('p') #p是搜索框下方的给定分类
-
+        user = request.user
+        user_ = normal_user.objects.filter(user=user)
+        user_id = user_[0].id
         if not q and not p:
             return render(request, 'search_from.html', {'error': True})
 
@@ -37,6 +39,11 @@ def search_result(request):
                 for judge in judges:
                     judge.judgement_id = i
                     i = i + 1
+                    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                    if thumb_:
+                        judge.tb = 1
+                    else:
+                        judge.tb = 0
                 text[course_s.id] = judges
             return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 
@@ -49,14 +56,17 @@ def search_result(request):
                 for judge in judges:
                     judge.judgement_id = i
                     i = i + 1
+                    for judge in judges:
+                        thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                        if thumb_:
+                            judge.tb = 1
+                        else:
+                            judge.tb = 0
                 text[course_s.id] = judges
             return render(request, 'search_result.html', {'courses': courses, 'query': p, 'judgement': text})
 
         if p and q:
-            # courses = course.objects.filter(name__contains=q, type__contains=p)
-            courses = course.objects.filter(type__contains=p)
-            if not courses:
-                courses = course.objects.filter(name__contains=q)
+            courses = course.objects.filter(name__contains=q, type__contains=p)
             text = {}
             for course_s in courses:
                 judges = judgement_system.objects.filter(course_id=course_s.id)
@@ -64,8 +74,14 @@ def search_result(request):
                 for judge in judges:
                     judge.judgement_id = i
                     i = i + 1
+                    for judge in judges:
+                        thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                        if thumb_:
+                            judge.tb = 1
+                        else:
+                            judge.tb = 0
                 text[course_s.id] = judges
-            return render(request, 'search_result.html', {'courses': courses, 'query': p, 'judgement': text})
+            return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 
     else:
         return render(request, 'search_from.html', {'error': True})
@@ -120,24 +136,25 @@ def judgement_for_thumb_up(request):
     return render(request, 'thumb_up.html')
 
 
-def thumb_up_dealing(request):
-    if request.method == "POST":
-        comment_id = request.POST.get('judgement_id')
-        user = request.user
-        user_ = normal_user.objects.get(user=user)
-        user_id = user_.id
-        result = thumb_up.objects.filter(user_id=user_id, judgement_id=comment_id)
-        comment = judgement_system.objects.get(id=comment_id)
-        if len(result) == 0:
-            thumb_up(user_id=user_, judgement_id=comment).save()
-            comment.number_of_thumb_up = comment.number_of_thumb_up + 1
-            comment.save()
-        else:
-            good = thumb_up.objects.get(user_id=user_, judgement_id=comment)
-            good.delete()
-            comment.number_of_thumb_up = comment.number_of_thumb_up - 1
-            comment.save()
-    return redirect("/search_result/")
+def thumb(request):
+    user = request.user
+    user_ = normal_user.objects.filter(user=user)
+    user_id = user_[0].id
+    p2 = request.POST.get('judge_id')
+    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=p2)
+    if thumb_:
+        judge = judgement_system.objects.get(id=p2)
+        judge.number_of_thumb_up = judge.number_of_thumb_up - 1
+        judge.save()
+        thumb_ = thumb_up.objects.filter(judgement_id_id=p2, user_id_id=user_id)
+        thumb_.delete()
+    else:
+        judge = judgement_system.objects.get(id=p2)
+        judge.number_of_thumb_up = judge.number_of_thumb_up + 1
+        judge.save()
+        thumb_up(judgement_id_id=p2,
+                 user_id_id=user_id).save()
+    return search_result(request=request)
 
 
 def add_judgement(request):
