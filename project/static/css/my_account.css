@@ -1,0 +1,190 @@
+#content-box{
+    margin-top: 20px;
+    padding: 0;
+    display: block;
+    z-index: 10;
+}
+#content-box2{
+   float:right;
+}
+.title2{
+       background: url("../img/个人空间.png")no-repeat;
+    background-size: 100% 100%;
+    height: 110px;
+    width: 215px;
+    margin-left: 800px;
+}
+.title3{
+    margin-left: 568px;
+}
+
+.card {
+    background-color: rgba(30,144,255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 5px;
+    margin-left: 10px;
+    float:left;
+}
+.touxiang{
+    background:url("../img/头像3.png" );
+    width:15%;
+    hright:15%;
+}
+.cangshu{
+    background: url("../img/仓鼠.png")no-repeat;
+    position:fixed;
+    height:362px;
+width:1365px;
+    bottom:0;
+     left:180px;
+     z-index:-1;
+
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+/*.img{
+    background:url("../img/头像3.png" );
+    float:left;
+    background-size:100% 100%;
+    height: 200px;
+    width:200px;
+}*/
+
+.picture{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+img{
+    width: 100%;
+}
+
+#course-info{
+    font-size: 20px;
+    font-family: "微软雅黑 Light";
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#course-info:link{
+    color: #0f0f0f;
+}
+
+#course-info:hover{
+    color: #9954BB;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.date{
+    float: right;
+}
+
+.emphasize{
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+}
+
+.table{
+    font-size: 15px;
+    font-family: 宋体;
+}
+
+body{
+    position: relative;
+}
+
+.error{
+    font-size: 30px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+
+#icon1{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#icon2{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#icon3{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#icon4{
+    font-size: 15px;
+    color: steelblue;
+    padding: 5px;
+    font-family: 宋体;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rating{
+    float: right;
+    display: inline;
+}
+
+/*#pic-box{
+    background: url("../img/shuiyin.jpg")no-repeat;
+    background-size: 100% 100%;
+
+    height: 25vw;
+    bottom: 30px;
+    position: fixed;
+    z-index: -1;
+}*/
+
+#bg{
+    width: 100vw;
+
+    background-color: whitesmoke;
+    background-size: 100% 100%;
+}
+
+#add-button{
+    padding: 7px;
+    font-size: 16px;
+
+    background-color: black;
+}
+
+.form-control{
+    width: 80%;
+    display: inline;
+    float: right;
+}
