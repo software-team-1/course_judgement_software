@@ -24,10 +24,11 @@ def search_result(request):
     if request.POST:
         q = request.POST.get('q') #q是搜索框里搜索的课程
         p = request.POST.get('p') #p是搜索框下方的给定分类
+        r = request.POST.get('r')  # r为热门课程请求
         user = request.user
         user_ = normal_user.objects.filter(user=user)
         user_id = user_[0].id
-        if not q and not p:
+        if (not q and not p and not r) or (r and q):  # 两种错误情况处理：搜索框没输入点击搜索/在搜索框输入后点“热门课程”，都会重新刷新页面
             return render(request, 'search_from.html', {'error': True})
 
         if q and not p:
@@ -82,6 +83,26 @@ def search_result(request):
                             judge.tb = 0
                 text[course_s.id] = judges
             return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
+
+        if r and not q:
+            courses = course.objects.filter(judgement_system__number_of_thumb_up__gte=5).distinct()  #某门课有评论点赞数高于x即成为热门课程
+            #judgement_system_obj = SysUser.objects.all().aggregate(Max('number_of_thumb_up'))
+            #judgement_system_obj = judgement_system.objects.filter(number_of_thumb_up = 5)
+            #courses = judgement_system_obj.course
+            text = {}
+            for course_s in courses:
+                judges = judgement_system.objects.filter(course_id=course_s.id)
+                i = 1
+                for judge in judges:
+                    judge.judgement_id = i
+                    i = i + 1
+                    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                    if thumb_:
+                        judge.tb = 1
+                    else:
+                        judge.tb = 0
+                text[course_s.id] = judges
+            return render(request, 'search_result.html', {'courses': courses, 'query': r, 'judgement': text})
 
     else:
         return render(request, 'search_from.html', {'error': True})

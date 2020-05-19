@@ -22,14 +22,14 @@
 
 div.search{
     height: 60px;
-    width: 700px;
+    width: 800px;
     position: absolute;
     top: 30%;
-    left: 31%;
+    left: 25%;
 }
 
 div.search form input:nth-child(2){
-    width: 550px;
+    width: 650px;
     height: 60px;
     font-size: 30px;
     text-indent: 40px;
@@ -102,10 +102,10 @@ div.search form img{
 
 .category{
     margin-top: 25px;
-    width: 165px;
+    width: 150px;
     height: 50px;
     position: relative;
-    font-size: 20px;
+    font-size: 19px;
     color: #c4c4c4;
     background-color: transparent;
     border-color: #686868;
