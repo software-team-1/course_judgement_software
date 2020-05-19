@@ -1,0 +1,256 @@
+{% extends 'log_sign/base.html' %}
+{% load static %}
+{% block title %}judgement{% endblock %}
+{% block css %}
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{% static 'bootstrap/js/star-rating.js'%}" type="text/javascript"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'bootstrap/css/star-rating.css'%}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/my-account.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+        <div class="title2">
+        </div>
+       <div class="card">
+ <img src={% static "/img/头像.png" %} alt="头像">
+  <div class="container">
+      <h4 style="font-family: Century"><b>用户名：{{ my_account.username }} </b></h4>
+    <p style="font-family: Century">学号：{{ my_account.student_number }}</p>
+      <p style="font-family: Century">电话：{{ my_account.phone }}</p>
+      <p style="font-family: Century">邮箱：{{ my_account.email }}</p>
+  </div>
+</div>
+    <div class="title3">评价记录</div>
+        <div class="col-md-9 col-md-offset-1" id="content-box2.5" >
+    {% for judge in my_account %}
+        <div class="modal fade" id="modal{{ course.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="myModalLabel">添加评论</h4>
+                    </div>-->
+                    <form action="/add_judgement/submit" method="post">
+                        <div class="modal-body">
+                            <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
+                                <tr>
+                                    <td colspan="2">
+                                        <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                    </td>
+                                    <td colspan="2">
+                                        <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                    </td>
+                                    <td colspan="2">
+                                        <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <span class="emphasize">课程名称：</span>
+                                        <input class="form-control" readonly="true" type="text" value="{{ judge.course.name }}" style="display: inline;width: 50%;float: right">
+                                    </td>
+                                    <td colspan="3">
+                                        <span class="emphasize">授课教师：</span>
+                                        <input class="form-control" readonly="true" type="text" value="{{ judge.course.teacher }}" style="display: inline;width: 50%;float: right">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <span class="emphasize">硬核指数：</span>
+                                        <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15">
+                                    </td>
+                                    <td colspan="2">
+                                        <span class="emphasize">兴趣指数：</span>
+                                        <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15">
+                                    </td>
+                                    <td colspan="2">
+                                        <span class="emphasize">推荐指数：</span>
+                                        <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <span class="emphasize">课程评价：</span>
+                                        <textarea type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <span class="emphasize">老师评价：</span>
+                                        <textarea type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <span class="emphasize">成绩构成：</span>
+                                        <textarea type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <span class="emphasize">作业估时：</span>
+                                        <textarea type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" style="display: inline; margin-left:20px;float: left;width: 40%">关闭</button>
+                            <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">提交</button>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <script>
+            $(function () { $('#myModal').modal({
+                keyboard: true
+            })});
+        </script>
+
+        <div class="col-md-8 col-md-offset-2" id="content-box">
+            <div class="panel-group" id="accordion{{course.id}}">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{ course.id }}"  href="#collapse{{ course.id }}">
+                                <table class="title" style="table-layout: fixed; font-family: 宋体;font-weight: bold;">
+                                    <tr>
+                                        <td>课程：{{ judge.course.name }}</td>
+                                        <td>老师：{{ judge.course.teacher }}</td>
+                                        <td>类别：{{ judge.course.type }}</td>
+                                        <td>学分：{{ judge.course.credit }}</td>
+                                    </tr>
+                                </table>
+                            </a>
+                        </h4>
+                    </div>
+
+                    <div id="collapse{{ course.id }}"  class="panel-collapse collapse in">
+                        <div class="panel-body">
+                           <!--<button class="btn btn-primary btn-lg btn-block" id="add_button" data-toggle="modal"
+                                    data-target="#modal{{ course.id }}" style="padding: 7px;font-size:16px">添加评论</button>-->
+                            <ul class="list-group">
+                                    {% if key == course.id %}
+                                        {% for judge in my_account %}
+                                            <table class="table table-bordered" style="table-layout: fixed;margin-top: 20px;">
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <span class="emphasize">评论{{ judge.judgement_id }}</span>
+                                                        <span class="date"><small>编辑于：{{ judge.create_date }}</small></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">硬核指数：</span>
+                                                        <input id="star1" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.hard_core_mark }}>
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">兴趣指数：</span>
+                                                        <input id="star2" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.mark_of_interest }}>
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <span class="emphasize">推荐指数：</span>
+                                                        <input id="star3" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.recommend_mark }}>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon1" style="color: cadetblue">
+                                                            <span class="glyphicon glyphicon-pencil"></span> 课程评价 </button>
+                                                        {{ judge.comment_of_the_course }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon2" style="color: #2aabd2">
+                                                            <span class="glyphicon glyphicon-user"></span> 老师评价 </button>
+                                                        {{ judge.comment_of_the_teacher }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon3" style="color: steelblue">
+                                                            <span class="glyphicon glyphicon-list-alt"></span> 成绩构成 </button>
+                                                        {{ judge.the_constitution_of_grade }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
+                                                            <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
+                                                        {{ judge.time_for_homework }}
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        {% endfor %}
+                                    {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+        </div>
+</div>
+    <div class="cangshu"></div>
+
+    <div class="col-md-4 col-md-offset-4" id="pic-box">
+
+    </div>
+    <script>
+        $('.rating').rating({
+            min: 0, /*星星的最小数值*/
+            max: 10, /*星星的最大数值*/
+            step: 1, /*表示增加减少的数量*/
+            size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
+            showClear: false, /*是否显示清除按钮*/
+            readonly: false,
+            {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
+            {#readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/#}
+            {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
+            {#starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}#}
+            showCaptionAsTitle: false,
+            showCaption: false,
+        });
+
+        $('.rating-show').rating({
+            min: 0, /*星星的最小数值*/
+            max: 10, /*星星的最大数值*/
+            step: 1, /*表示增加减少的数量*/
+            size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
+            showClear: false, /*是否显示清除按钮*/
+            {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
+            readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/
+            {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
+            {#starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}#}
+            showCaptionAsTitle: false,
+            showCaption: false,
+        });
+
+        /*这里是更改评分后，星星的打分显示 .rating('update',3)这样*/
+        {#$('.rating1').rating({ }).rating('update',3);#}
+        {#$('.rating2').rating({ }).rating('update',2);#}
+        {#$('.rating3').rating({ }).rating('update',4);#}
+        {#$('.rating4').rating({ }).rating('update',5);#}
+    </script>
+
+    <script>
+        function f(id) {
+            var course_id = id;    //获取要传到后台的数据
+        $.ajax({
+            type: "POST",
+            url: "add_judgement/submit/",    //后台处理函数的url
+            data: course_id,
+            success: function (result) {  //获取后台处理后传过来的result
+                alert(result)
+            },
+        });
+        }
+    </script>
+
+{% endblock %}
+

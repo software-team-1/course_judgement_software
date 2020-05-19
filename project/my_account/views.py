@@ -21,6 +21,8 @@ def my_account(request):
         my_course = course.objects.filter(id=judge.course_id)
         judge.course_name = my_course[0].name
         judge.course_teacher = my_course[0].teacher
+        judge.course_type = my_course[0].type
+        judge.course_credit = my_course[0].credit
     for judge in judges:
         thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
         if thumb_:
