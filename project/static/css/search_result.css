@@ -132,3 +132,46 @@ body{
     display: inline;
     float: right;
 }
+
+.hidden{
+    display: none;
+}
+
+.button1{
+    background: url("../img/thumb.png") no-repeat;
+    background-size: 100% 100%;
+
+    width: 60px;
+    height: 30px;
+    padding-left: 35px;
+    font-size: 20px;
+
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    outline: none;
+}
+
+.button2{
+    background: url("../img/thumbs-up.png") no-repeat;
+    background-size: 100% 100%;
+
+    width: 60px;
+    height: 30px;
+    padding-left: 35px;
+    font-size: 20px;
+
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    outline: none;
+}
+
+#thumbs-up{
+    float: right;
+}
+

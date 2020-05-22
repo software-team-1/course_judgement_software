@@ -141,15 +141,6 @@
                                                         <span class="date"><small>编辑于：{{ judge.create_date }}</small></span>
                                                     </td>
                                                 </tr>
-
-                                                {{ judge.number_of_thumb_up}}
-                                                <form action="/search_result/thumb" method="post">
-                                                <p><input type="text" name="q" value={{ query }} ></p>
-                                                <p><input type="text" name="judge_id" value={{ judge.id }} ></p>
-                                                <p><input type="submit" value="submit"></p> </form>
-                                                {{ judge.tb }}
-
-
                                                 <tr>
                                                     <td colspan="1">
                                                         <span class="emphasize">硬核指数：</span>
@@ -190,6 +181,27 @@
                                                         <button type="button" class="btn btn-default btn-lg" id="icon4" style="color: rgba(0,0,139,0.8)">
                                                             <span class="glyphicon glyphicon-time"></span> 作业估时 </button>
                                                         {{ judge.time_for_homework }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <div id="thumbs-up">
+                                                            {% if judge.tb == 0 %}
+                                                                <form action="/search_result/thumb" method="post">
+                                                                    <input type="text" name="q" value={{ query }} class="hidden">
+                                                                    <input type="text" name="judge_id" value={{ judge.id }} class="hidden">
+                                                                    <input type="text" name="judge_tb" value={{ judge.tb }} class="hidden">
+                                                                    <input type="submit" value={{ judge.number_of_thumb_up }} class="button1">
+                                                                </form>
+                                                            {% else %}
+                                                                <form action="/search_result/thumb" method="post">
+                                                                    <input type="text" name="q" value={{ query }} class="hidden">
+                                                                    <input type="text" name="judge_id" value={{ judge.id }} class="hidden">
+                                                                    <input type="text" name="judge_tb" value={{ judge.tb }} class="hidden">
+                                                                    <input type="submit" value={{ judge.number_of_thumb_up }} class="button2">
+                                                                </form>
+                                                            {% endif %}
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -258,6 +270,21 @@
                 alert(result)
             },
         });
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.onbeforeunload=function(){
+            var scrollPos;
+            scrollPos=document.documentElement.scrollTop||document.body.scrollTop;
+            document.cookie="scrollTop="+scrollPos;
+        }
+        window.onload=function(){
+            if(document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null){
+                var arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/);
+                document.documentElement.scrollTop = parseInt(arr[1]);
+                document.body.scrollTop = parseInt(arr[1]);
+            }
         }
     </script>
 
