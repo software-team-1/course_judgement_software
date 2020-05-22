@@ -28,7 +28,7 @@ def search_result(request):
         user = request.user
         user_ = normal_user.objects.filter(user=user)
         user_id = user_[0].id
-        if (not q and not p and not r) or (r and q):  # 两种错误情况处理：搜索框没输入点击搜索/在搜索框输入后点“热门课程”，都会重新刷新页面
+        if (not q and not p and not r) or (r and q) or (p and q):  # 两种错误情况处理：搜索框没输入点击搜索/在搜索框输入后点“热门课程”，都会重新刷新页面
             return render(request, 'search_from.html', {'error': True})
 
         if q and not p:
