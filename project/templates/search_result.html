@@ -27,15 +27,19 @@
                         <div class="modal-body">
                             <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
                                 <tr style="display: none">
+                                    {% if mode == 1 %}
                                     <td colspan="1">
                                         <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
                                     </td>
+                                    {% elif mode == 2 %}
                                     <td colspan="1">
                                         <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
                                     </td>
+                                    {% elif mode == 3 %}
                                     <td colspan="1">
-                                        <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
+                                        <input class="form-control" readonly="true" type="int" name="r" value="{{ course.id }}" style="display: none">
                                     </td>
+                                    {% endif %}
                                     <td colspan="1">
                                         <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
                                     </td>

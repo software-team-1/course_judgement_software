@@ -46,7 +46,7 @@ def search_result(request):
                     else:
                         judge.tb = 0
                 text[course_s.id] = judges
-            return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
+            return render(request, 'search_result.html', {'mode':1, 'courses': courses, 'query': q, 'judgement': text})
 
         if p and not q:
             courses = course.objects.filter(type__contains=p)
@@ -63,26 +63,26 @@ def search_result(request):
                     else:
                         judge.tb = 0
                 text[course_s.id] = judges
-            return render(request, 'search_result.html', {'courses': courses, 'query': p, 'judgement': text})
+            return render(request, 'search_result.html', {'mode':2, 'courses': courses, 'query': p, 'judgement': text})
 
-        if p and q:
-            courses = course.objects.filter(name__contains=q, type__contains=p)
-            text = {}
-            for course_s in courses:
-                judges = judgement_system.objects.filter(course_id=course_s.id)
-                i = 1
-                for judge in judges:
-                    judge.judgement_id = i
-                    i = i + 1
-                    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
-                    if thumb_:
-                        judge.tb = 1
-                    else:
-                        judge.tb = 0
-                text[course_s.id] = judges
-            return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
+        # if p and q:
+        #     courses = course.objects.filter(name__contains=q, type__contains=p)
+        #     text = {}
+        #     for course_s in courses:
+        #         judges = judgement_system.objects.filter(course_id=course_s.id)
+        #         i = 1
+        #         for judge in judges:
+        #             judge.judgement_id = i
+        #             i = i + 1
+        #             thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+        #             if thumb_:
+        #                 judge.tb = 1
+        #             else:
+        #                 judge.tb = 0
+        #         text[course_s.id] = judges
+        #     return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 
-        if r and not q:
+        if r and not q and not p:
             courses = course.objects.filter(judgement_system__number_of_thumb_up__gte=5).distinct()  #某门课有评论点赞数高于x即成为热门课程
             #judgement_system_obj = SysUser.objects.all().aggregate(Max('number_of_thumb_up'))
             #judgement_system_obj = judgement_system.objects.filter(number_of_thumb_up = 5)
@@ -100,7 +100,7 @@ def search_result(request):
                     else:
                         judge.tb = 0
                 text[course_s.id] = judges
-            return render(request, 'search_result.html', {'courses': courses, 'query': r, 'judgement': text})
+            return render(request, 'search_result.html', {'mode':3, 'courses': courses, 'query': r, 'judgement': text})
 
     else:
         return render(request, 'search_from.html', {'error': True})
