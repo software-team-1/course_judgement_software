@@ -26,14 +26,17 @@
                     <form action="/add_judgement/submit" method="post">
                         <div class="modal-body">
                             <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
-                                <tr>
-                                    <td colspan="2">
+                                <tr style="display: none">
+                                    <td colspan="1">
                                         <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
                                     </td>
-                                    <td colspan="2">
+                                    <td colspan="1">
                                         <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
                                     </td>
-                                    <td colspan="2">
+                                    <td colspan="1">
+                                        <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
+                                    </td>
+                                    <td colspan="1">
                                         <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
                                     </td>
                                 </tr>

@@ -57,12 +57,11 @@ def search_result(request):
                 for judge in judges:
                     judge.judgement_id = i
                     i = i + 1
-                    for judge in judges:
-                        thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
-                        if thumb_:
-                            judge.tb = 1
-                        else:
-                            judge.tb = 0
+                    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                    if thumb_:
+                        judge.tb = 1
+                    else:
+                        judge.tb = 0
                 text[course_s.id] = judges
             return render(request, 'search_result.html', {'courses': courses, 'query': p, 'judgement': text})
 
@@ -75,12 +74,11 @@ def search_result(request):
                 for judge in judges:
                     judge.judgement_id = i
                     i = i + 1
-                    for judge in judges:
-                        thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
-                        if thumb_:
-                            judge.tb = 1
-                        else:
-                            judge.tb = 0
+                    thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
+                    if thumb_:
+                        judge.tb = 1
+                    else:
+                        judge.tb = 0
                 text[course_s.id] = judges
             return render(request, 'search_result.html', {'courses': courses, 'query': q, 'judgement': text})
 
@@ -115,38 +113,6 @@ def judgement(request, p1):
 
 def judgement_for_course(request):
     return render(request, 'add_judgement.html')
-
-
-# def add_judgement(request):
-#     if request.method == "POST":
-#         comment_of_the_course = request.POST.get("comment_of_the_course")
-#         comment_of_the_teacher = request.POST.get("comment_of_the_teacher")
-#         the_constitution_of_grade = request.POST.get("the_constitution_of_grade ")
-#         time_for_homework = request.POST.get("time_for_homework")
-#         hard_core_mark = request.POST.get("hard_core_mark")
-#         recommend_mark = request.POST.get("recommend_mark")
-#         mark_of_interest = request.POST.get("mark_of_interest")
-#         course_id = request.POST.get("course_id")
-#
-#         # judge = request.POST.get("id")
-#         # modify_judge = judgement_system.objects.filter(id=judge)
-#         # course_id = modify_judge[0].course_id
-#         # modify_judge.delete()
-#         user = request.user
-#         user_ = normal_user.objects.filter(user=user)
-#         user_id = user_[0].id
-#         judgement_system(create_date=datetime.now(),
-#                          comment_of_the_course=comment_of_the_course,
-#                          comment_of_the_teacher=comment_of_the_teacher,
-#                          the_constitution_of_grade=the_constitution_of_grade,
-#                          time_for_homework=time_for_homework,
-#                          course_id=course_id,
-#                          hard_core_mark=hard_core_mark,
-#                          recommend_mark=recommend_mark,
-#                          mark_of_interest=mark_of_interest,
-#                          name_id=user_id).save()
-#
-#     return redirect("/search_result/")
 
 
 def add_review(request, id):

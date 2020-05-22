@@ -11,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="row" style="margin-left:5vw;margin-top: 20px;margin-bottom: 20px">
         <div class="col-md-4 col-lg-offset-5 ">
             <img src={% static "/img/pendant_1.png" %} alt="个人空间" style="width:15vw;">
@@ -52,6 +53,89 @@
 
     <div class="col-md-7" style="padding: 0;margin-right: 5vw;float: right;display: inline">
     {% for judge in my_account %}
+    <div class="modal fade" id="modal{{ judge.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">添加评论</h4>
+                </div>
+                <form action="/my_account/modify_judgement/" method="post">
+                    <div class="modal-body">
+                        <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
+                            <tr style="display: none">
+                                <td colspan="6">
+                                    <input class="form-control" readonly="true" type="int" name="id" value="{{ judge.id }}" style="display: none">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <span class="emphasize">课程名称：</span>
+                                    <input class="form-control" readonly="true" type="text" value="{{ judge.course_name}}" style="display: inline;width: 50%;float: right">
+                                </td>
+                                <td colspan="3">
+                                    <span class="emphasize">授课教师：</span>
+                                    <input class="form-control" readonly="true" type="text" value="{{ judge.course_teacher }}" style="display: inline;width: 50%;float: right">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="emphasize">硬核指数：</span>
+                                    <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15" value="{{ judge.hard_core_mark }}">
+                                </td>
+                                <td colspan="2">
+                                    <span class="emphasize">兴趣指数：</span>
+                                    <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15" value="{{ judge.mark_of_interest }}">
+                                </td>
+                                <td colspan="2">
+                                    <span class="emphasize">推荐指数：</span>
+                                    <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15" value="{{ judge.recommend_mark }}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <span class="emphasize">课程评价：</span>
+{#                                    <textarea type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;float: right" value="{{ judge.comment_of_the_course }}"></textarea>#}
+                                    <input type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;line-height:100%;float: right" value="{{ judge.comment_of_the_course }}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <span class="emphasize">老师评价：</span>
+{#                                    <textarea type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
+                                    <input value="{{ judge.comment_of_the_teacher }}" type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <span class="emphasize">成绩构成：</span>
+{#                                    <textarea type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
+                                    <input value="{{ judge.the_constitution_of_grade }}" type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <span class="emphasize">作业估时：</span>
+{#                                    <textarea type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
+                                    <input value="{{ judge.time_for_homework }}" type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" style="display: inline; margin-left:20px;float: left;width: 40%">关闭</button>
+                        <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">提交</button>
+                    </div>
+                </form>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <script>
+        $(function () { $('#myModal').modal({
+            keyboard: true
+        })});
+    </script>
     <div class="col-md-7" id="content-box">
             <div class="panel-group" id="accordion{{judge.id}}">
                 <div class="panel panel-default">
@@ -118,11 +202,14 @@
                                     </tr>
                                     <tr>
                                         <td colspan="3">
-                                            <span class="date"><small>编辑于：{{ judge.create_date }}</small></span>
+                                            <span class="date"><small>最后编辑于：{{ judge.create_date }}</small></span>
                                             <button class="btn btn-primary btn-lg" id="add_button" data-toggle="modal"
                                                 data-target="#modal{{ judge.id }}" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;">修改评论</button>
-                                            <button class="btn btn-default btn-lg" id="delete_button" data-toggle="modal"
-                                                data-target="#modal{{ judge.id }}" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;">删除评论</button>
+                                            <form action="/my_account/delete_judgement/" method="post">
+                                            <input type="text" name="id" value="{{ judge.id }}" style="display:none">
+                                            <input class="btn btn-default btn-lg" type="submit" value="删除评论" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;"></form>
+{#                                            <button class="btn btn-default btn-lg" id="delete_button" data-toggle="modal"#}
+{#                                                data-target="#modal{{ judge.id }}" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;">删除评论</button>#}
                                         </td>
                                     </tr>
                                 </table>
