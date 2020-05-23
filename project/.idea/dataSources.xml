@@ -81,5 +81,13 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\sq\Desktop\course_judgement_software\project\db.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Django default3" uuid="45deed45-41aa-4585-9956-c0f17c0ff2eb">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/project/settings.py</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\sq\Desktop\course_judgement_software\project\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
