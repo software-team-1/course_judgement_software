@@ -1,4 +1,3 @@
-# Create your models here.
 from django.db import models
 from log_sign.models import normal_user
 import datetime
@@ -13,9 +12,6 @@ class course(models.Model):
     credit = models.DecimalField(max_digits=10, decimal_places=1)
     # 种类，即人文类还是社科类
     type = models.CharField(max_length=20)
-
-    # def __unicode__(self):
-    # return self.name
 
 
 class judgement_system(models.Model):

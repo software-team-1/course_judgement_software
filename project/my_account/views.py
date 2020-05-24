@@ -1,5 +1,4 @@
 from datetime import datetime
-
 from django.shortcuts import render, redirect
 from course_search_judgement.models import course, judgement_system, thumb_up
 from log_sign.models import normal_user
@@ -7,6 +6,7 @@ from django.contrib.auth.models import User
 
 
 def my_account(request):
+    # 我的账号页面
     user = request.user
     user_ = normal_user.objects.filter(user=user)
     user_id = user_[0].id
@@ -23,7 +23,6 @@ def my_account(request):
         judge.course_teacher = my_course[0].teacher
         judge.course_type = my_course[0].type
         judge.course_credit = my_course[0].credit
-    for judge in judges:
         thumb_ = thumb_up.objects.filter(user_id_id=user_id, judgement_id_id=judge.id)
         if thumb_:
             judge.tb = 1
@@ -33,6 +32,7 @@ def my_account(request):
 
 
 def thumb(request, p2):
+    # 点赞功能函数
     user = request.user
     user_ = normal_user.objects.filter(user=user)
     user_id = user_[0].id
@@ -53,6 +53,7 @@ def thumb(request, p2):
 
 
 def modify_judgement(request):
+    # 修改评论功能函数
     if request.method == "POST":
         comment_of_the_course = request.POST.get("comment_of_the_course")
         comment_of_the_teacher = request.POST.get("comment_of_the_teacher")
@@ -82,6 +83,7 @@ def modify_judgement(request):
 
 
 def delete(request):
+    # 删除评论功能函数
     if request.method == "POST":
         judge = request.POST.get("id")
         delete_judge = judgement_system.objects.filter(id=judge)
