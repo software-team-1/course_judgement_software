@@ -11,7 +11,7 @@ def home(request):
         if request.user.is_authenticated:
          return render(request, 'search_from.html')
         else:
-            return render(request, 'log_sign/home.html')
+            return render(request, 'home.html')
 
 
 
@@ -20,12 +20,12 @@ def log_in(request):
     if request.method == 'POST':
         user = authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
-            return render(request, 'log_sign/log_in.html', {'error': '用户名或密码不存在'})
+            return render(request, 'log_in.html', {'error': '用户名或密码不存在'})
         else:
             login(request, user)
             return render(request,'search_from.html')
     else:
-        return render(request, 'log_sign/log_in.html')
+        return render(request, 'log_in.html')
 
 
 def log_out(request):
@@ -45,9 +45,9 @@ def register(request):
             return redirect("log_sign:home")
         else:
             text = {'register_forms': register_forms}
-            return render(request, 'log_sign/register.html', text)
+            return render(request, 'register.html', text)
     else:
         register_forms = normal_user_form()
     text = {'register_forms': register_forms}
-    return render(request, 'log_sign/register.html', text)
+    return render(request, 'register.html', text)
 

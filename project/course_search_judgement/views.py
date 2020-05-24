@@ -111,18 +111,6 @@ def judgement(request, p1):
     return render(request, 'judgement.html', {'judgement': judges})
 
 
-def judgement_for_course(request):
-    return render(request, 'add_judgement.html')
-
-
-def add_review(request, id):
-    return render(request, 'add_review.html')
-
-
-def judgement_for_thumb_up(request):
-    return render(request, 'thumb_up.html')
-
-
 def thumb(request):
     user = request.user
     user_ = normal_user.objects.filter(user=user)

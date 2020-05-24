@@ -1,4 +1,4 @@
-{% extends 'log_sign/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block title %}judgement{% endblock %}
 {% block css %}
@@ -15,10 +15,7 @@
     <div class="row" style="margin-left:5vw;margin-top: 20px;margin-bottom: 20px">
         <div class="col-md-4 col-lg-offset-5 ">
             <img src={% static "/img/pendant_1.png" %} alt="个人空间" style="width:15vw;">
-{#            <div class="row">#}
-{#                <img src={% static "/img/pendant_3.jpg" %} alt="挂件" style="display: inline-block;float:left;width: 40%">#}
-{#                <img src={% static "/img/pendant_3.jpg" %} alt="挂件" style="display: inline-block;float:left;width: 40%">#}
-{#            </div>#}
+
         </div>
     </div>
     <div class="row" style="margin-top: 10px">
@@ -28,7 +25,6 @@
             <img src={% static "/img/user.png" %} alt="头像">
         </div>
         <div class="panel-body">
-{#                <ul class="list-group">#}
             <table class="table table-borderless" style="table-layout: fixed;">
                 <tr>
                     <td colspan="2"><span class="glyphicon glyphicon-user"></span> <p style="font-weight:bolder;display: inline">用户名</p></td>
@@ -95,14 +91,12 @@
                             <tr>
                                 <td colspan="6">
                                     <span class="emphasize">课程评价：</span>
-{#                                    <textarea type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;float: right" value="{{ judge.comment_of_the_course }}"></textarea>#}
                                     <input type="text" name="comment_of_the_course" class="form-control" style="display: inline;width: 80%;line-height:100%;float: right" value="{{ judge.comment_of_the_course }}">
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="6">
                                     <span class="emphasize">老师评价：</span>
-{#                                    <textarea type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
                                     <input value="{{ judge.comment_of_the_teacher }}" type="text" name="comment_of_the_teacher" class="form-control" style="display: inline;width: 80%;float: right">
 
                                 </td>
@@ -110,14 +104,12 @@
                             <tr>
                                 <td colspan="6">
                                     <span class="emphasize">成绩构成：</span>
-{#                                    <textarea type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
                                     <input value="{{ judge.the_constitution_of_grade }}" type="text" name="the_constitution_of_grade " class="form-control" style="display: inline;width: 80%;float: right">
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="6">
                                     <span class="emphasize">作业估时：</span>
-{#                                    <textarea type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right"></textarea>#}
                                     <input value="{{ judge.time_for_homework }}" type="text" name="time_for_homework" class="form-control" style="display: inline;width: 80%;float: right">
                                 </td>
                             </tr>
@@ -128,9 +120,9 @@
                         <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">提交</button>
                     </div>
                 </form>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="confirm{{ judge.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -148,14 +140,10 @@
                         <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">确认</button>
                     </div>
                 </form>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
+            </div>
+        </div>
     </div>
-{#    <script>#}
-{#        $(function () { $('#myModal').modal({#}
-{#            keyboard: true#}
-{#        })});#}
-{#    </script>#}
+
     <div class="col-md-7" id="content-box">
             <div class="panel-group" id="accordion{{judge.id}}">
                 <div class="panel panel-default">
@@ -225,9 +213,6 @@
                                             <span class="date"><small>最后编辑于：{{ judge.create_date }}</small></span>
                                             <button class="btn btn-primary btn-lg" id="add_button" data-toggle="modal"
                                                 data-target="#modal{{ judge.id }}" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;">修改评论</button>
-{#                                            <form action="/my_account/delete_judgement/" method="post">#}
-{#                                            <input type="text" name="id" value="{{ judge.id }}" style="display:none">#}
-{#                                            <input class="btn btn-default btn-lg" type="submit" value="删除评论" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;"></form>#}
                                             <button class="btn btn-default btn-lg" id="delete_button" data-toggle="modal"
                                                 data-target="#confirm{{ judge.id }}" style="padding: 5px;font-size:14px;width: 15%;font-family: 宋体;float: right;margin-right: 20px;">删除评论</button>
                                         </td>
@@ -253,10 +238,6 @@
             size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
             showClear: false, /*是否显示清除按钮*/
             readonly: false,
-            {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
-            {#readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/#}
-            {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
-            {#starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}#}
             showCaptionAsTitle: false,
             showCaption: false,
         });
@@ -267,19 +248,10 @@
             step: 1, /*表示增加减少的数量*/
             size: 'xs', /*星星的大小 有lg,sm,xl,xs*/
             showClear: false, /*是否显示清除按钮*/
-            {#disabled: true, /*不可用设置 默认false可以点击  true禁止点击*/#}
-            readonly:true,  /*只读模式 跟上面一样效果，不知道啥区别*/
-            {#starCaptions: {1: '1分 太坑', 2: '2分 凑合', 3: '3分 一般', 4: '4分 很好', 5: '5分 非常好'},#}
-            {#starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}#}
+            readonly:true,  /*只读模式 */
             showCaptionAsTitle: false,
             showCaption: false,
         });
-
-        /*这里是更改评分后，星星的打分显示 .rating('update',3)这样*/
-        {#$('.rating1').rating({ }).rating('update',3);#}
-        {#$('.rating2').rating({ }).rating('update',2);#}
-        {#$('.rating3').rating({ }).rating('update',4);#}
-        {#$('.rating4').rating({ }).rating('update',5);#}
     </script>
     </div>
 {% endblock %}
