@@ -73,11 +73,6 @@ def search_result(request):
         return render(request, 'search_from.html', {'error': True})
 
 
-def judgement(request, p1):
-    judges = judgement_system.objects.filter(course_id=p1)
-    return render(request, 'judgement.html', {'judgement': judges})
-
-
 def thumb(request):
     # 点赞功能函数
     user = request.user
