@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32d0fc42-b096-45b4-aaea-8511fa12957f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/course_search_judgement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_search_judgement/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/judgement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +264,7 @@
       <workItem from="1590200192965" duration="1654000" />
       <workItem from="1590324591358" duration="962000" />
       <workItem from="1590388171715" duration="6364000" />
-      <workItem from="1590413583230" duration="428000" />
+      <workItem from="1590413583230" duration="1197000" />
     </task>
     <servers />
   </component>
@@ -355,38 +355,38 @@
     <state x="474" y="120" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1589508304726" />
     <state x="505" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589725717693" />
     <state x="533" y="145" key="FileChooserDialogImpl/0.0.1620.1040@0.0.1620.1040" timestamp="1589900678480" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1590403678657">
+    <state width="1877" height="11" key="GridCell.Tab.0.bottom" timestamp="1590414723406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="93" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590325554490" />
     <state width="1397" height="198" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1589516371447" />
     <state width="739" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589725986953" />
     <state width="1568" height="188" key="GridCell.Tab.0.bottom/0.0.1620.1040@0.0.1620.1040" timestamp="1590160911463" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590403678657" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1590403678656">
+    <state width="1877" height="11" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590414723406" />
+    <state width="1877" height="11" key="GridCell.Tab.0.center" timestamp="1590414723406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="93" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590325554490" />
     <state width="1397" height="198" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1589516371446" />
     <state width="739" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589725986953" />
     <state width="1568" height="188" key="GridCell.Tab.0.center/0.0.1620.1040@0.0.1620.1040" timestamp="1590160911463" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590403678656" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1590403678656">
+    <state width="1877" height="11" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590414723406" />
+    <state width="1877" height="11" key="GridCell.Tab.0.left" timestamp="1590414723406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="93" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590325554489" />
     <state width="1397" height="198" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1589516371445" />
     <state width="739" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589725986953" />
     <state width="1568" height="188" key="GridCell.Tab.0.left/0.0.1620.1040@0.0.1620.1040" timestamp="1590160911463" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590403678656" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1590403678657">
+    <state width="1877" height="11" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590414723406" />
+    <state width="1877" height="11" key="GridCell.Tab.0.right" timestamp="1590414723406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="93" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590325554490" />
     <state width="1397" height="198" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1589516371446" />
     <state width="739" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589725986953" />
     <state width="1568" height="188" key="GridCell.Tab.0.right/0.0.1620.1040@0.0.1620.1040" timestamp="1590160911463" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590403678657" />
+    <state width="1877" height="11" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590414723406" />
     <state width="1877" height="2" key="GridCell.Tab.1.bottom" timestamp="1589282565698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -416,14 +416,14 @@
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1589613575972" />
     <state width="246" height="604" key="HiddenNamespacesPopup/0.0.1440.860@0.0.1440.860" timestamp="1589508242715" />
-    <state x="58" y="49" key="SettingsEditor" timestamp="1590403614078">
+    <state x="58" y="49" key="SettingsEditor" timestamp="1590414191092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590327497153" />
     <state x="160" y="0" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1589507815404" />
     <state x="46" y="39" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589719926950" />
     <state x="49" y="49" key="SettingsEditor/0.0.1620.1040@0.0.1620.1040" timestamp="1590157277646" />
-    <state x="58" y="49" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590403614078" />
+    <state x="58" y="49" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590414191092" />
     <state x="600" y="85" key="com.intellij.database.dbimport.ImportDialog" timestamp="1589511180195">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
