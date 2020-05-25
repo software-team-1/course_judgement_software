@@ -117,16 +117,6 @@ body{
     display: inline;
 }
 
-/*#pic-box{*/
-/*    background: url("../img/仓鼠.png")no-repeat;*/
-/*    background-size: 100% 100%;*/
-
-/*    !*width: 100%;*!*/
-/*    bottom: 30px;*/
-/*    position: fixed;*/
-/*    z-index: -1;*/
-/*}*/
-
 #bg{
     width: 100vw;
 
@@ -144,6 +134,7 @@ body{
     margin-right: 20px;
     background-color: black;
 }
+
 #delete-button{
     font-family: 宋体;
     padding: 5px;

@@ -77,6 +77,6 @@
 .middle{
     height: 100vh;
 
-    background: url("../img/bg-text.png")no-repeat;
+    background: url("../img/bg-text.png") no-repeat;
     background-size: 100% 100%;
 }

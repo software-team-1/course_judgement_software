@@ -16,55 +16,61 @@
                         <input type="text" name='username' class="form-control" id="id_username" placeholder="Username" autofocus required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.username %}
+                {% for error in register_forms.errors.username %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
+
                 <div class="form-group">
                     <label for="id_password1" class="col-sm-3 control-label">密码:</label>
                     <div class="col-sm-9">
                         <input type="password" name='password1' class="form-control" id="id_password1" placeholder="Password1" required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.password1 %}
+                {% for error in register_forms.errors.password1 %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
+
                 <div class="form-group">
                     <label for="id_password2" class="col-sm-3 control-label">确认密码:</label>
                     <div class="col-sm-9">
                         <input type="password" name='password2' class="form-control" id="id_password2" placeholder="Password2" required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.password2 %}
+                {% for error in register_forms.errors.password2 %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
+
                 <div class="form-group">
                     <label for="id_email" class="col-sm-3 control-label">邮箱:</label>
                     <div class="col-sm-9">
                         <input type="text" name='email' class="form-control" id="id_email" placeholder="Email" required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.email %}
+                {% for error in register_forms.errors.email %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
+
                 <div class="form-group">
                     <label for="id_student_number" class="col-sm-3 control-label">学号:</label>
                     <div class="col-sm-9">
                         <input type="text" name='student_number' class="form-control" id="id_student_number" placeholder="Student Number" required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.student_number %}
+                {% for error in register_forms.errors.student_number %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
+
                 <div class="form-group">
                     <label for="id_phone" class="col-sm-3 control-label">联系方式:</label>
                     <div class="col-sm-9">
                         <input type="text" name='phone' class="form-control" id="id_phone" placeholder="Phone" required>
                     </div>
                 </div>
-                {% for error in  register_forms.errors.phone %}
+                {% for error in register_forms.errors.phone %}
                     <p class="tip"><span class="star">*</span>{{ error }}</p>
                 {% endfor %}
-                <button type="submit" class="btn btn-primary pull-right">提交</button>
+
+                <button type="submit" class="btn btn-primary pull-right" style="outline: none">提交</button>
             </form>
         </div>
     </div>

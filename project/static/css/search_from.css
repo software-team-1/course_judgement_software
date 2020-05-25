@@ -1,5 +1,5 @@
 .container{
-    background: url("../img/bg-amb.png")no-repeat;
+    background: url("../img/bg-amb.png") no-repeat;
     background-size: 100vw 100vh;
 
     margin: auto;
@@ -10,7 +10,7 @@
 }
 
 .img{
-    background: url("../img/xiaohui.png" );
+    background: url("../img/xiaohui.png" ) no-repeat;
     background-size: 100% 100%;
 
     width: 36vw;

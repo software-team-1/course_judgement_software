@@ -4,9 +4,9 @@
 {% block css %}
     <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="{% static 'bootstrap/js/star-rating.js'%}" type="text/javascript"></script>
+    <script src="{% static 'bootstrap/js/star-rating.js' %}" type="text/javascript"></script>
     <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'bootstrap/css/star-rating.css'%}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'bootstrap/css/star-rating.css' %}" media="all" rel="stylesheet" type="text/css"/>
     <link href="{% static 'css/search_result.css' %}" rel="stylesheet"/>
 {% endblock %}
 
@@ -21,51 +21,51 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title" id="myModalLabel">添加评论</h4>
+                        <h4 class="modal-title" id="myModalLabel" style="outline: none">添加评论</h4>
                     </div>
                     <form action="/add_judgement/submit" method="post">
                         <div class="modal-body">
-                            <table class="table table-bordered" id="add-table" style="font-family:宋体;table-layout: fixed;margin-top: 20px;">
+                            <table class="table table-bordered" id="add-table" style="font-family: 宋体;table-layout: fixed;margin-top: 20px;">
                                 <tr style="display: none">
                                     {% if mode == 1 %}
                                     <td colspan="1">
-                                        <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                        <input class="form-control" readonly="readonly" type="text" name="q" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                     </td>
                                     {% elif mode == 2 %}
                                     <td colspan="1">
-                                        <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                        <input class="form-control" readonly="readonly" type="text" name="p" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                     </td>
                                     {% elif mode == 3 %}
                                     <td colspan="1">
-                                        <input class="form-control" readonly="true" type="int" name="r" value="{{ query }}" style="display: none">
+                                        <input class="form-control" readonly="readonly" type="text" name="r" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                     </td>
                                     {% endif %}
                                     <td colspan="1">
-                                        <input class="form-control" readonly="true" type="int" name="course_id" value="{{ course.id }}" style="display: none">
+                                        <input class="form-control" readonly="readonly" type="text" name="course_id" value="{{ course.id }}" style="width: 50%;text-align: center;display: none">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">
                                         <span class="emphasize">课程名称：</span>
-                                        <input class="form-control" readonly="true" type="text" value="{{ course.name }}" style="display: inline;width: 50%;float: right">
+                                        <input class="form-control" readonly="readonly" type="text" value="{{ course.name }}" style="display: inline;width: 50%;float: right">
                                     </td>
                                     <td colspan="3">
                                         <span class="emphasize">授课教师：</span>
-                                        <input class="form-control" readonly="true" type="text" value="{{ course.teacher }}" style="display: inline;width: 50%;float: right">
+                                        <input class="form-control" readonly="readonly" type="text" value="{{ course.teacher }}" style="display: inline;width: 50%;float: right">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">
                                         <span class="emphasize">硬核指数：</span>
-                                        <input id="star4" name="hard_core_mark" class="rating"  min="0" max="10" data-size="15">
+                                        <input id="star4" name="hard_core_mark" class="rating" min="0" max="10" data-size="15">
                                     </td>
                                     <td colspan="2">
                                         <span class="emphasize">兴趣指数：</span>
-                                        <input id="star5" name="mark_of_interest" class="rating"  min="0" max="10" data-size="15">
+                                        <input id="star5" name="mark_of_interest" class="rating" min="0" max="10" data-size="15">
                                     </td>
                                     <td colspan="2">
                                         <span class="emphasize">推荐指数：</span>
-                                        <input id="star6" name="recommend_mark" class="rating"  min="0" max="10" data-size="15">
+                                        <input id="star6" name="recommend_mark" class="rating" min="0" max="10" data-size="15">
                                     </td>
                                 </tr>
                                 <tr>
@@ -95,26 +95,29 @@
                             </table>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" style="display: inline; margin-left:20px;float: left;width: 40%">关闭</button>
-                            <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right:20px;width: 40%">提交</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" style="display: inline; margin-left: 20px;float: left;width: 40%;outline: none">关闭</button>
+                            <button type="submit" class="btn btn-primary" style="display: inline;float: right;margin-right: 20px;width: 40%;outline: none">提交</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
         <script>
-            $(function () { $('#myModal').modal({
-                keyboard: true
-            })});
+            $(function(){
+                $('#myModal').modal({
+                    keyboard: true
+                })
+            });
         </script>
 
         <div class="col-md-8 col-md-offset-2" id="content-box">
-            <div class="panel-group" id="accordion{{course.id}}">
+            <div class="panel-group" id="accordion{{ course.id }}">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{ course.id }}"  href="#collapse{{ course.id }}">
-                                <table class="title" style="table-layout: fixed; font-family: 宋体;font-weight: bold;">
+                            <a id= "course-info" data-toggle="collapse" data-parent="#accordion{{ course.id }}" href="#collapse{{ course.id }}">
+                                <table class="title" style="table-layout: fixed;font-family: 宋体;font-weight: bold;">
                                     <tr>
                                         <td>课程：{{ course.name }}</td>
                                         <td>老师：{{ course.teacher }}</td>
@@ -129,7 +132,7 @@
                     <div id="collapse{{ course.id }}"  class="panel-collapse collapse in">
                         <div class="panel-body">
                             <button class="btn btn-primary btn-lg btn-block" id="add_button" data-toggle="modal"
-                                    data-target="#modal{{ course.id }}" style="padding: 7px;font-size:16px">添加评论</button>
+                                    data-target="#modal{{ course.id }}" style="padding: 7px;font-size: 16px;outline: none">添加评论</button>
                             <ul class="list-group">
                                 {% for key, judges in judgement.items %}
                                     {% if key == course.id %}
@@ -144,15 +147,15 @@
                                                 <tr>
                                                     <td colspan="1">
                                                         <span class="emphasize">硬核指数：</span>
-                                                        <input id="star1" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.hard_core_mark }}>
+                                                        <input id="star1" name="testName" class="rating-show" min="0" max="10" data-size="15" value={{ judge.hard_core_mark }}>
                                                     </td>
                                                     <td colspan="1">
                                                         <span class="emphasize">兴趣指数：</span>
-                                                        <input id="star2" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.mark_of_interest }}>
+                                                        <input id="star2" name="testName" class="rating-show" min="0" max="10" data-size="15" value={{ judge.mark_of_interest }}>
                                                     </td>
                                                     <td colspan="1">
                                                         <span class="emphasize">推荐指数：</span>
-                                                        <input id="star3" name="testName" class="rating-show"  min="0" max="10" data-size="15" value={{ judge.recommend_mark }}>
+                                                        <input id="star3" name="testName" class="rating-show" min="0" max="10" data-size="15" value={{ judge.recommend_mark }}>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -189,11 +192,11 @@
                                                             {% if judge.tb == 0 %}
                                                                 <form action="/search_result/thumb" method="post">
                                                                     {% if mode == 1 %}
-                                                                        <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="q" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% elif mode == 2 %}
-                                                                        <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="p" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% elif mode == 3 %}
-                                                                        <input class="form-control" readonly="true" type="int" name="r" value="{{ query }}" style="display: none">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="r" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% endif %}
                                                                         <input type="text" name="judge_id" value={{ judge.id }} class="hidden">
                                                                         <input type="text" name="judge_tb" value={{ judge.tb }} class="hidden">
@@ -202,11 +205,11 @@
                                                             {% else %}
                                                                 <form action="/search_result/thumb" method="post">
                                                                     {% if mode == 1 %}
-                                                                        <input class="form-control" readonly="true" type="text" name="q" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="q" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% elif mode == 2 %}
-                                                                        <input class="form-control" readonly="true" type="text" name="p" style="display: none" value="{{ query }}" style="width: 50%;text-align: center">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="p" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% elif mode == 3 %}
-                                                                        <input class="form-control" readonly="true" type="int" name="r" value="{{ query }}" style="display: none">
+                                                                        <input class="form-control" readonly="readonly" type="text" name="r" value="{{ query }}" style="width: 50%;text-align: center;display: none">
                                                                     {% endif %}
                                                                         <input type="text" name="judge_id" value={{ judge.id }} class="hidden">
                                                                         <input type="text" name="judge_tb" value={{ judge.tb }} class="hidden">
@@ -234,6 +237,7 @@
     <div class="col-md-4 col-md-offset-4" id="pic-box">
 
     </div>
+
     <script>
         $('.rating').rating({
             min: 0, /*星星的最小数值*/
@@ -257,12 +261,14 @@
             showCaption: false,
         });
     </script>
+
     <script type="text/javascript">
         window.onbeforeunload=function(){
             var scrollPos;
             scrollPos=document.documentElement.scrollTop||document.body.scrollTop;
             document.cookie="scrollTop="+scrollPos;
         }
+
         window.onload=function(){
             if(document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null){
                 var arr=document.cookie.match(/scrollTop=([^;]+)(;|$)/);

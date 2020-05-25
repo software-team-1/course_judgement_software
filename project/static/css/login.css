@@ -1,5 +1,5 @@
 .container{
-    background: url("../img/bg-amb.png")no-repeat;
+    background: url("../img/bg-amb.png") no-repeat;
     background-size: 100% 100%;
 
     margin: auto;
@@ -37,6 +37,11 @@
     width: 100%;
     height: 35px;
     margin-top: 20px;
+}
+
+.text-center{
+    margin-bottom: 20px;
+    font-size: 25px;
 }
 
 .form-login{
